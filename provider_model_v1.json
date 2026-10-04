@@ -1,0 +1,4074 @@
+{
+ "model_version": "ridge_logit_v1_2026-10-03",
+ "feature_columns": [
+  "srvcs_per_bene",
+  "pymt_per_bene",
+  "chrg_to_alowd",
+  "drug_pymt_share",
+  "risk_score",
+  "pymt_per_bene_per_risk",
+  "pct_under65",
+  "pct_dual",
+  "avg_age",
+  "n_distinct_codes",
+  "tot_benes",
+  "sameday_repeat_ratio",
+  "em_high_share",
+  "top_code_pymt_share",
+  "facility_share",
+  "n_service_rows"
+ ],
+ "weights": {
+  "z_srvcs_per_bene": 0.137531,
+  "z_pymt_per_bene": -0.275678,
+  "z_chrg_to_alowd": -0.428429,
+  "z_drug_pymt_share": -0.004461,
+  "z_risk_score": -0.031214,
+  "z_pymt_per_bene_per_risk": 0.24705,
+  "z_pct_under65": 0.080809,
+  "z_pct_dual": 0.220874,
+  "z_avg_age": 0.042256,
+  "z_n_distinct_codes": -0.230862,
+  "z_tot_benes": -0.03646,
+  "z_sameday_repeat_ratio": 0.015097,
+  "z_em_high_share": 0.154648,
+  "z_top_code_pymt_share": 0.081508,
+  "z_facility_share": -0.0153,
+  "z_n_service_rows": 0.108724
+ },
+ "intercept": -0.32044657498287943,
+ "peer_statistics": {
+  "ALL|srvcs_per_bene": [
+   3.0277777777777777,
+   2.0737801075268814
+  ],
+  "ALL|pymt_per_bene": [
+   262.1771428571429,
+   204.91814145000004
+  ],
+  "ALL|chrg_to_alowd": [
+   3.0226443315630704,
+   1.4417829784655682
+  ],
+  "ALL|drug_pymt_share": [
+   0.0,
+   0.15035771015003804
+  ],
+  "ALL|risk_score": [
+   1.3941,
+   0.61246206
+  ],
+  "ALL|pymt_per_bene_per_risk": [
+   185.22186043383053,
+   172.79026256933628
+  ],
+  "ALL|pct_under65": [
+   0.0,
+   0.10249768280734317
+  ],
+  "ALL|pct_dual": [
+   0.05555555555555555,
+   0.08236666666666666
+  ],
+  "ALL|avg_age": [
+   73.0,
+   2.9652
+  ],
+  "ALL|n_distinct_codes": [
+   17.0,
+   16.3086
+  ],
+  "ALL|tot_benes": [
+   117.0,
+   133.434
+  ],
+  "ALL|sameday_repeat_ratio": [
+   1.0,
+   0.5307980453802461
+  ],
+  "ALL|em_high_share": [
+   0.6982186732186733,
+   0.40149188764044935
+  ],
+  "ALL|top_code_pymt_share": [
+   0.4388877605135208,
+   0.2558524503659541
+  ],
+  "ALL|facility_share": [
+   0.010316953839608595,
+   0.015295915762603701
+  ],
+  "ALL|n_service_rows": [
+   6.0,
+   5.9304
+  ],
+  "Allergy/ Immunology|srvcs_per_bene": [
+   21.8125,
+   25.124966847826084
+  ],
+  "Allergy/ Immunology|pymt_per_bene": [
+   309.76016129032257,
+   256.2052810890322
+  ],
+  "Allergy/ Immunology|chrg_to_alowd": [
+   2.1677422884406177,
+   0.5917008805808388
+  ],
+  "Allergy/ Immunology|drug_pymt_share": [
+   0.0,
+   0.31831142036834037
+  ],
+  "Allergy/ Immunology|risk_score": [
+   1.0522,
+   0.26568192
+  ],
+  "Allergy/ Immunology|pymt_per_bene_per_risk": [
+   310.6522131594802,
+   319.22784145070426
+  ],
+  "Allergy/ Immunology|pct_under65": [
+   0.0,
+   0.07842042945869257
+  ],
+  "Allergy/ Immunology|pct_dual": [
+   0.0,
+   0.20504586296310906
+  ],
+  "Allergy/ Immunology|avg_age": [
+   71.0,
+   2.9652
+  ],
+  "Allergy/ Immunology|n_distinct_codes": [
+   18.0,
+   11.8608
+  ],
+  "Allergy/ Immunology|tot_benes": [
+   135.0,
+   126.02099999999999
+  ],
+  "Allergy/ Immunology|sameday_repeat_ratio": [
+   2.96,
+   2.905896
+  ],
+  "Allergy/ Immunology|em_high_share": [
+   0.75,
+   0.3343625874125874
+  ],
+  "Allergy/ Immunology|top_code_pymt_share": [
+   0.4122862551262656,
+   0.18291694354925025
+  ],
+  "Allergy/ Immunology|facility_share": [
+   0.0,
+   0.14151355361709878
+  ],
+  "Allergy/ Immunology|n_service_rows": [
+   7.0,
+   4.4478
+  ],
+  "Ambulance Service Provider|srvcs_per_bene": [
+   20.47459889443171,
+   15.507163586190577
+  ],
+  "Ambulance Service Provider|pymt_per_bene": [
+   694.3559636363636,
+   182.3187827382591
+  ],
+  "Ambulance Service Provider|chrg_to_alowd": [
+   2.177373108254372,
+   0.9153549563364933
+  ],
+  "Ambulance Service Provider|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Ambulance Service Provider|risk_score": [
+   1.9856,
+   0.3624957000000002
+  ],
+  "Ambulance Service Provider|pymt_per_bene_per_risk": [
+   363.1722047389855,
+   133.3225817842274
+  ],
+  "Ambulance Service Provider|pct_under65": [
+   0.04956268221574344,
+   0.07348163265306122
+  ],
+  "Ambulance Service Provider|pct_dual": [
+   0.24581005586592178,
+   0.18192947818851773
+  ],
+  "Ambulance Service Provider|avg_age": [
+   77.0,
+   2.9652
+  ],
+  "Ambulance Service Provider|n_distinct_codes": [
+   4.0,
+   1.4826
+  ],
+  "Ambulance Service Provider|tot_benes": [
+   115.0,
+   133.434
+  ],
+  "Ambulance Service Provider|sameday_repeat_ratio": [
+   7.076923076923077,
+   5.253398869077941
+  ],
+  "Ambulance Service Provider|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Ambulance Service Provider|top_code_pymt_share": [
+   0.5717398712470353,
+   0.16942241887320433
+  ],
+  "Ambulance Service Provider|facility_share": [
+   1.0,
+   1.0
+  ],
+  "Ambulance Service Provider|n_service_rows": [
+   3.0,
+   1.4826
+  ],
+  "Ambulatory Surgical Center|srvcs_per_bene": [
+   1.9873638344226578,
+   0.9087744764535212
+  ],
+  "Ambulatory Surgical Center|pymt_per_bene": [
+   1479.3815708565708,
+   1233.114846922753
+  ],
+  "Ambulatory Surgical Center|chrg_to_alowd": [
+   4.018181109864579,
+   2.2374788620315464
+  ],
+  "Ambulatory Surgical Center|drug_pymt_share": [
+   0.0,
+   0.003859611939700731
+  ],
+  "Ambulatory Surgical Center|risk_score": [
+   1.0162,
+   0.29170154999999987
+  ],
+  "Ambulatory Surgical Center|pymt_per_bene_per_risk": [
+   1318.9730581817553,
+   901.5751102309113
+  ],
+  "Ambulatory Surgical Center|pct_under65": [
+   0.03217189918451267,
+   0.04769805773095848
+  ],
+  "Ambulatory Surgical Center|pct_dual": [
+   0.043650709030813514,
+   0.05966519073706031
+  ],
+  "Ambulatory Surgical Center|avg_age": [
+   73.0,
+   1.4826
+  ],
+  "Ambulatory Surgical Center|n_distinct_codes": [
+   32.5,
+   26.686799999999998
+  ],
+  "Ambulatory Surgical Center|tot_benes": [
+   474.0,
+   443.2974
+  ],
+  "Ambulatory Surgical Center|sameday_repeat_ratio": [
+   1.0743639921722115,
+   0.1102520547945207
+  ],
+  "Ambulatory Surgical Center|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Ambulatory Surgical Center|top_code_pymt_share": [
+   0.3902846495533997,
+   0.16553982661000094
+  ],
+  "Ambulatory Surgical Center|facility_share": [
+   1.0,
+   1.0
+  ],
+  "Ambulatory Surgical Center|n_service_rows": [
+   10.0,
+   5.9304
+  ],
+  "Anesthesiology|srvcs_per_bene": [
+   1.1779299847792999,
+   0.1742822490223068
+  ],
+  "Anesthesiology|pymt_per_bene": [
+   149.30775075250835,
+   70.64138323295455
+  ],
+  "Anesthesiology|chrg_to_alowd": [
+   8.983533156384212,
+   4.231550702803733
+  ],
+  "Anesthesiology|drug_pymt_share": [
+   0.0,
+   0.004958882119516335
+  ],
+  "Anesthesiology|risk_score": [
+   1.5291000000000001,
+   0.4983759899999999
+  ],
+  "Anesthesiology|pymt_per_bene_per_risk": [
+   99.44409998095708,
+   50.662073447797546
+  ],
+  "Anesthesiology|pct_under65": [
+   0.0,
+   0.0789890064152204
+  ],
+  "Anesthesiology|pct_dual": [
+   0.1105006105006105,
+   0.13946311481440604
+  ],
+  "Anesthesiology|avg_age": [
+   73.0,
+   1.4826
+  ],
+  "Anesthesiology|n_distinct_codes": [
+   40.0,
+   22.9803
+  ],
+  "Anesthesiology|tot_benes": [
+   150.0,
+   109.71239999999999
+  ],
+  "Anesthesiology|sameday_repeat_ratio": [
+   1.0,
+   0.012764716078592104
+  ],
+  "Anesthesiology|em_high_share": [
+   0.7930816485523442,
+   0.30677714785629445
+  ],
+  "Anesthesiology|top_code_pymt_share": [
+   0.4463842324596891,
+   0.2561712356314561
+  ],
+  "Anesthesiology|facility_share": [
+   1.0,
+   0.2676005096637924
+  ],
+  "Anesthesiology|n_service_rows": [
+   4.0,
+   2.9652
+  ],
+  "Anesthesiology Assistant|srvcs_per_bene": [
+   1.0123737373737374,
+   0.018345303030303024
+  ],
+  "Anesthesiology Assistant|pymt_per_bene": [
+   95.15683585858585,
+   19.441823788524754
+  ],
+  "Anesthesiology Assistant|chrg_to_alowd": [
+   10.275526092514603,
+   3.9373126305698527
+  ],
+  "Anesthesiology Assistant|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Anesthesiology Assistant|risk_score": [
+   1.6779000000000002,
+   0.36368177999999973
+  ],
+  "Anesthesiology Assistant|pymt_per_bene_per_risk": [
+   56.70242834599662,
+   13.819126775924493
+  ],
+  "Anesthesiology Assistant|pct_under65": [
+   0.0,
+   0.0479909128755309
+  ],
+  "Anesthesiology Assistant|pct_dual": [
+   0.054717275851296474,
+   0.08112383317713215
+  ],
+  "Anesthesiology Assistant|avg_age": [
+   73.0,
+   1.4826
+  ],
+  "Anesthesiology Assistant|n_distinct_codes": [
+   33.0,
+   15.5673
+  ],
+  "Anesthesiology Assistant|tot_benes": [
+   108.0,
+   66.717
+  ],
+  "Anesthesiology Assistant|sameday_repeat_ratio": [
+   1.0,
+   1.0
+  ],
+  "Anesthesiology Assistant|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Anesthesiology Assistant|top_code_pymt_share": [
+   0.6115981005529745,
+   0.406527141041718
+  ],
+  "Anesthesiology Assistant|facility_share": [
+   1.0,
+   0.16903085094570333
+  ],
+  "Anesthesiology Assistant|n_service_rows": [
+   2.0,
+   1.4826
+  ],
+  "Audiologist|srvcs_per_bene": [
+   1.9166666666666667,
+   0.45976803278688533
+  ],
+  "Audiologist|pymt_per_bene": [
+   39.34997647058824,
+   13.229638847001434
+  ],
+  "Audiologist|chrg_to_alowd": [
+   2.9126171052722176,
+   0.9069818986392102
+  ],
+  "Audiologist|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Audiologist|risk_score": [
+   1.0888,
+   0.19184843999999993
+  ],
+  "Audiologist|pymt_per_bene_per_risk": [
+   36.14068375329559,
+   13.057933055964389
+  ],
+  "Audiologist|pct_under65": [
+   0.0,
+   0.039268098809823654
+  ],
+  "Audiologist|pct_dual": [
+   0.0,
+   0.09972815358757123
+  ],
+  "Audiologist|avg_age": [
+   75.0,
+   1.4826
+  ],
+  "Audiologist|n_distinct_codes": [
+   5.0,
+   2.9652
+  ],
+  "Audiologist|tot_benes": [
+   107.0,
+   99.3342
+  ],
+  "Audiologist|sameday_repeat_ratio": [
+   1.0,
+   0.013127482520394591
+  ],
+  "Audiologist|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Audiologist|top_code_pymt_share": [
+   0.6780360932571283,
+   0.225100073423008
+  ],
+  "Audiologist|facility_share": [
+   0.0,
+   0.1027661817021241
+  ],
+  "Audiologist|n_service_rows": [
+   2.0,
+   1.4826
+  ],
+  "Cardiology|srvcs_per_bene": [
+   2.7061072125193375,
+   1.3327222877296834
+  ],
+  "Cardiology|pymt_per_bene": [
+   150.16146996996997,
+   115.43650318033337
+  ],
+  "Cardiology|chrg_to_alowd": [
+   2.9713784601853437,
+   0.9815414986640197
+  ],
+  "Cardiology|drug_pymt_share": [
+   0.0,
+   0.04162689108856479
+  ],
+  "Cardiology|risk_score": [
+   1.74765,
+   0.35241401999999983
+  ],
+  "Cardiology|pymt_per_bene_per_risk": [
+   84.01715546329393,
+   64.71163622507788
+  ],
+  "Cardiology|pct_under65": [
+   0.05918835793057192,
+   0.047637103928849706
+  ],
+  "Cardiology|pct_dual": [
+   0.126435500580793,
+   0.09994669478633661
+  ],
+  "Cardiology|avg_age": [
+   76.0,
+   1.4826
+  ],
+  "Cardiology|n_distinct_codes": [
+   37.5,
+   18.5325
+  ],
+  "Cardiology|tot_benes": [
+   752.5,
+   697.5632999999999
+  ],
+  "Cardiology|sameday_repeat_ratio": [
+   1.0088345864661654,
+   0.013098157894736846
+  ],
+  "Cardiology|em_high_share": [
+   0.9802804557405784,
+   0.029236196319018422
+  ],
+  "Cardiology|top_code_pymt_share": [
+   0.3244516592093057,
+   0.12629111752088715
+  ],
+  "Cardiology|facility_share": [
+   0.4255725190839695,
+   0.47520353612027644
+  ],
+  "Cardiology|n_service_rows": [
+   19.0,
+   11.8608
+  ],
+  "Centralized Flu|srvcs_per_bene": [
+   3.1752818865003,
+   0.2427900930216189
+  ],
+  "Centralized Flu|pymt_per_bene": [
+   250.64327450980392,
+   21.934542655823194
+  ],
+  "Centralized Flu|chrg_to_alowd": [
+   1.0441684464119096,
+   0.01104465045516133
+  ],
+  "Centralized Flu|drug_pymt_share": [
+   0.7826020855646207,
+   0.014036898294210643
+  ],
+  "Centralized Flu|risk_score": [
+   0.9729,
+   0.13172900999999998
+  ],
+  "Centralized Flu|pymt_per_bene_per_risk": [
+   254.04068027066182,
+   42.16513665526484
+  ],
+  "Centralized Flu|pct_under65": [
+   0.0,
+   0.022783330096865742
+  ],
+  "Centralized Flu|pct_dual": [
+   0.0,
+   0.0995376594634724
+  ],
+  "Centralized Flu|avg_age": [
+   75.0,
+   1.4826
+  ],
+  "Centralized Flu|n_distinct_codes": [
+   10.0,
+   1.4826
+  ],
+  "Centralized Flu|tot_benes": [
+   179.5,
+   124.5384
+  ],
+  "Centralized Flu|sameday_repeat_ratio": [
+   1.0,
+   0.0011012091706027103
+  ],
+  "Centralized Flu|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Centralized Flu|top_code_pymt_share": [
+   0.46005062758036175,
+   0.09005923869054822
+  ],
+  "Centralized Flu|facility_share": [
+   0.0,
+   1.0
+  ],
+  "Centralized Flu|n_service_rows": [
+   7.0,
+   1.4826
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|srvcs_per_bene": [
+   1.0273972602739727,
+   0.04061917808219194
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|pymt_per_bene": [
+   113.77609513274336,
+   36.30280224380531
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|chrg_to_alowd": [
+   9.01834804406901,
+   4.839168972793603
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|drug_pymt_share": [
+   0.0,
+   0.0013128475201149186
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|risk_score": [
+   1.4668,
+   0.50156358
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|pymt_per_bene_per_risk": [
+   79.46555154461083,
+   36.6360121166394
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|pct_under65": [
+   0.0,
+   0.049583167582201694
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|pct_dual": [
+   0.055710306406685235,
+   0.08259610027855152
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|avg_age": [
+   73.0,
+   1.4826
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|n_distinct_codes": [
+   30.0,
+   13.343399999999999
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|tot_benes": [
+   95.0,
+   60.7866
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|sameday_repeat_ratio": [
+   1.0,
+   0.019333009265660384
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|em_high_share": [
+   0.4200994318181818,
+   0.28693785511363634
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|top_code_pymt_share": [
+   0.5796308773322947,
+   0.3190163455434837
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|facility_share": [
+   1.0,
+   0.19372585490671368
+  ],
+  "Certified Registered Nurse Anesthetist (CRNA)|n_service_rows": [
+   2.0,
+   1.4826
+  ],
+  "Chiropractic|srvcs_per_bene": [
+   8.804382155546783,
+   3.980710673653233
+  ],
+  "Chiropractic|pymt_per_bene": [
+   220.65486779560308,
+   111.76763474376114
+  ],
+  "Chiropractic|chrg_to_alowd": [
+   1.526743137450075,
+   0.4638224086880877
+  ],
+  "Chiropractic|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Chiropractic|risk_score": [
+   0.85225,
+   0.15582125999999996
+  ],
+  "Chiropractic|pymt_per_bene_per_risk": [
+   252.18315026244588,
+   144.37744856669846
+  ],
+  "Chiropractic|pct_under65": [
+   0.0,
+   0.007557342028751386
+  ],
+  "Chiropractic|pct_dual": [
+   0.0,
+   0.04568571455517632
+  ],
+  "Chiropractic|avg_age": [
+   73.0,
+   1.4826
+  ],
+  "Chiropractic|n_distinct_codes": [
+   2.0,
+   0.5767742001410638
+  ],
+  "Chiropractic|tot_benes": [
+   43.0,
+   32.6172
+  ],
+  "Chiropractic|sameday_repeat_ratio": [
+   1.0,
+   0.0006637828266734606
+  ],
+  "Chiropractic|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Chiropractic|top_code_pymt_share": [
+   1.0,
+   0.1334201142758153
+  ],
+  "Chiropractic|facility_share": [
+   0.0,
+   0.006276666051610595
+  ],
+  "Chiropractic|n_service_rows": [
+   1.0,
+   0.4777131535832387
+  ],
+  "Clinical Cardiac Electrophysiology|srvcs_per_bene": [
+   3.172043010752688,
+   1.340005661619486
+  ],
+  "Clinical Cardiac Electrophysiology|pymt_per_bene": [
+   210.4129906542056,
+   119.42980307553006
+  ],
+  "Clinical Cardiac Electrophysiology|chrg_to_alowd": [
+   3.438658493964937,
+   1.0543607956896257
+  ],
+  "Clinical Cardiac Electrophysiology|drug_pymt_share": [
+   0.0,
+   0.001351276821349157
+  ],
+  "Clinical Cardiac Electrophysiology|risk_score": [
+   1.7808,
+   0.2020783800000001
+  ],
+  "Clinical Cardiac Electrophysiology|pymt_per_bene_per_risk": [
+   108.99178269544235,
+   66.61542294380808
+  ],
+  "Clinical Cardiac Electrophysiology|pct_under65": [
+   0.03508771929824561,
+   0.030946830580099886
+  ],
+  "Clinical Cardiac Electrophysiology|pct_dual": [
+   0.1005089058524173,
+   0.0521954961832061
+  ],
+  "Clinical Cardiac Electrophysiology|avg_age": [
+   77.0,
+   1.4826
+  ],
+  "Clinical Cardiac Electrophysiology|n_distinct_codes": [
+   64.0,
+   16.3086
+  ],
+  "Clinical Cardiac Electrophysiology|tot_benes": [
+   786.0,
+   576.7314
+  ],
+  "Clinical Cardiac Electrophysiology|sameday_repeat_ratio": [
+   1.0006564910553093,
+   0.0009733136386015592
+  ],
+  "Clinical Cardiac Electrophysiology|em_high_share": [
+   0.9903978052126201,
+   0.01423621399176951
+  ],
+  "Clinical Cardiac Electrophysiology|top_code_pymt_share": [
+   0.24101340900547497,
+   0.13158118314234843
+  ],
+  "Clinical Cardiac Electrophysiology|facility_share": [
+   0.19636824324324326,
+   0.16312251778485537
+  ],
+  "Clinical Cardiac Electrophysiology|n_service_rows": [
+   27.0,
+   13.343399999999999
+  ],
+  "Clinical Laboratory|srvcs_per_bene": [
+   5.1033333333333335,
+   4.718689963800904
+  ],
+  "Clinical Laboratory|pymt_per_bene": [
+   144.93121006118287,
+   125.39947916329028
+  ],
+  "Clinical Laboratory|chrg_to_alowd": [
+   2.930136737130972,
+   2.2123648269341736
+  ],
+  "Clinical Laboratory|drug_pymt_share": [
+   0.0,
+   0.1621885360475983
+  ],
+  "Clinical Laboratory|risk_score": [
+   1.1838,
+   0.39170291999999995
+  ],
+  "Clinical Laboratory|pymt_per_bene_per_risk": [
+   118.2151702278895,
+   111.97673071859128
+  ],
+  "Clinical Laboratory|pct_under65": [
+   0.038221614227086184,
+   0.05666736525307797
+  ],
+  "Clinical Laboratory|pct_dual": [
+   0.08300593496614561,
+   0.12306459918080748
+  ],
+  "Clinical Laboratory|avg_age": [
+   74.0,
+   2.9652
+  ],
+  "Clinical Laboratory|n_distinct_codes": [
+   40.0,
+   48.925799999999995
+  ],
+  "Clinical Laboratory|tot_benes": [
+   1046.0,
+   1463.3262
+  ],
+  "Clinical Laboratory|sameday_repeat_ratio": [
+   1.0253768553708171,
+   0.037623725772773474
+  ],
+  "Clinical Laboratory|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Clinical Laboratory|top_code_pymt_share": [
+   0.42561405151258885,
+   0.38826665500427887
+  ],
+  "Clinical Laboratory|facility_share": [
+   0.0,
+   0.0231544515184558
+  ],
+  "Clinical Laboratory|n_service_rows": [
+   14.0,
+   17.7912
+  ],
+  "Colorectal Surgery (Proctology)|srvcs_per_bene": [
+   2.37937595129376,
+   0.42666100405679497
+  ],
+  "Colorectal Surgery (Proctology)|pymt_per_bene": [
+   362.9769988479263,
+   118.30115586048497
+  ],
+  "Colorectal Surgery (Proctology)|chrg_to_alowd": [
+   3.8764938203260897,
+   1.683308225946675
+  ],
+  "Colorectal Surgery (Proctology)|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Colorectal Surgery (Proctology)|risk_score": [
+   1.56505,
+   0.5192806499999999
+  ],
+  "Colorectal Surgery (Proctology)|pymt_per_bene_per_risk": [
+   251.8524867353679,
+   78.2056988999647
+  ],
+  "Colorectal Surgery (Proctology)|pct_under65": [
+   0.06145037807629494,
+   0.09110633053591488
+  ],
+  "Colorectal Surgery (Proctology)|pct_dual": [
+   0.1226457965160313,
+   0.08470033018357556
+  ],
+  "Colorectal Surgery (Proctology)|avg_age": [
+   72.0,
+   2.9652
+  ],
+  "Colorectal Surgery (Proctology)|n_distinct_codes": [
+   54.5,
+   22.9803
+  ],
+  "Colorectal Surgery (Proctology)|tot_benes": [
+   194.5,
+   77.09519999999999
+  ],
+  "Colorectal Surgery (Proctology)|sameday_repeat_ratio": [
+   1.0,
+   0.02695876781589349
+  ],
+  "Colorectal Surgery (Proctology)|em_high_share": [
+   0.5028711484593837,
+   0.3383789386189258
+  ],
+  "Colorectal Surgery (Proctology)|top_code_pymt_share": [
+   0.24474445738689074,
+   0.04764532984534756
+  ],
+  "Colorectal Surgery (Proctology)|facility_share": [
+   0.4041095890410959,
+   0.42331172286617497
+  ],
+  "Colorectal Surgery (Proctology)|n_service_rows": [
+   9.0,
+   2.9652
+  ],
+  "Critical Care (Intensivists)|srvcs_per_bene": [
+   2.345679012345679,
+   0.689327556914713
+  ],
+  "Critical Care (Intensivists)|pymt_per_bene": [
+   263.96934782608696,
+   112.40249656821585
+  ],
+  "Critical Care (Intensivists)|chrg_to_alowd": [
+   3.646004353801063,
+   1.3047999530820493
+  ],
+  "Critical Care (Intensivists)|drug_pymt_share": [
+   0.0,
+   0.05789863081255208
+  ],
+  "Critical Care (Intensivists)|risk_score": [
+   2.6048,
+   0.7414482600000003
+  ],
+  "Critical Care (Intensivists)|pymt_per_bene_per_risk": [
+   94.21924284381524,
+   37.53948396136419
+  ],
+  "Critical Care (Intensivists)|pct_under65": [
+   0.09230769230769231,
+   0.10867073003429689
+  ],
+  "Critical Care (Intensivists)|pct_dual": [
+   0.25757575757575757,
+   0.17443984287317618
+  ],
+  "Critical Care (Intensivists)|avg_age": [
+   74.0,
+   2.9652
+  ],
+  "Critical Care (Intensivists)|n_distinct_codes": [
+   16.0,
+   8.8956
+  ],
+  "Critical Care (Intensivists)|tot_benes": [
+   123.0,
+   105.26459999999999
+  ],
+  "Critical Care (Intensivists)|sameday_repeat_ratio": [
+   1.0,
+   0.02535421415526755
+  ],
+  "Critical Care (Intensivists)|em_high_share": [
+   0.936808339534772,
+   0.09368795580574696
+  ],
+  "Critical Care (Intensivists)|top_code_pymt_share": [
+   0.7016130151904177,
+   0.27128997797918053
+  ],
+  "Critical Care (Intensivists)|facility_share": [
+   1.0,
+   0.2516258254485878
+  ],
+  "Critical Care (Intensivists)|n_service_rows": [
+   4.0,
+   2.9652
+  ],
+  "Dermatology|srvcs_per_bene": [
+   4.666666666666667,
+   1.9581509433962265
+  ],
+  "Dermatology|pymt_per_bene": [
+   252.46344475394616,
+   137.0497084670173
+  ],
+  "Dermatology|chrg_to_alowd": [
+   2.372838639070281,
+   0.8289749958337979
+  ],
+  "Dermatology|drug_pymt_share": [
+   0.0,
+   0.09298018133806193
+  ],
+  "Dermatology|risk_score": [
+   1.0166,
+   0.16204817999999993
+  ],
+  "Dermatology|pymt_per_bene_per_risk": [
+   262.03877587075584,
+   157.6494468740063
+  ],
+  "Dermatology|pct_under65": [
+   0.0,
+   0.0433602723788872
+  ],
+  "Dermatology|pct_dual": [
+   0.016666666666666666,
+   0.02471
+  ],
+  "Dermatology|avg_age": [
+   75.0,
+   1.4826
+  ],
+  "Dermatology|n_distinct_codes": [
+   47.0,
+   29.651999999999997
+  ],
+  "Dermatology|tot_benes": [
+   459.0,
+   369.1674
+  ],
+  "Dermatology|sameday_repeat_ratio": [
+   1.3144373673036094,
+   0.1899589852510234
+  ],
+  "Dermatology|em_high_share": [
+   0.2782608695652174,
+   0.19728453454254466
+  ],
+  "Dermatology|top_code_pymt_share": [
+   0.29547618190163605,
+   0.09884117768311236
+  ],
+  "Dermatology|facility_share": [
+   0.0,
+   0.25664416424388614
+  ],
+  "Dermatology|n_service_rows": [
+   15.0,
+   7.412999999999999
+  ],
+  "Diagnostic Radiology|srvcs_per_bene": [
+   1.7863690231455729,
+   0.6447542299511139
+  ],
+  "Diagnostic Radiology|pymt_per_bene": [
+   53.469392915742866,
+   28.724690537816144
+  ],
+  "Diagnostic Radiology|chrg_to_alowd": [
+   4.638948233149481,
+   1.736277552663181
+  ],
+  "Diagnostic Radiology|drug_pymt_share": [
+   0.0,
+   0.007769522094317609
+  ],
+  "Diagnostic Radiology|risk_score": [
+   1.6910500000000002,
+   0.5437435499999999
+  ],
+  "Diagnostic Radiology|pymt_per_bene_per_risk": [
+   31.484253982875714,
+   19.67782824390371
+  ],
+  "Diagnostic Radiology|pct_under65": [
+   0.08666457649685298,
+   0.04430396297099815
+  ],
+  "Diagnostic Radiology|pct_dual": [
+   0.16016065983583716,
+   0.09636371714414266
+  ],
+  "Diagnostic Radiology|avg_age": [
+   74.0,
+   1.4826
+  ],
+  "Diagnostic Radiology|n_distinct_codes": [
+   95.5,
+   68.9409
+  ],
+  "Diagnostic Radiology|tot_benes": [
+   1529.5,
+   1399.5744
+  ],
+  "Diagnostic Radiology|sameday_repeat_ratio": [
+   1.0101410934744268,
+   0.01337307756186673
+  ],
+  "Diagnostic Radiology|em_high_share": [
+   0.7169811320754716,
+   0.2894657916324856
+  ],
+  "Diagnostic Radiology|top_code_pymt_share": [
+   0.21575210868529682,
+   0.11436550551139622
+  ],
+  "Diagnostic Radiology|facility_share": [
+   0.8313413014608234,
+   0.2500533864541832
+  ],
+  "Diagnostic Radiology|n_service_rows": [
+   30.0,
+   26.686799999999998
+  ],
+  "Emergency Medicine|srvcs_per_bene": [
+   1.3076923076923077,
+   0.30792461538461524
+  ],
+  "Emergency Medicine|pymt_per_bene": [
+   128.47077858880778,
+   19.572887049775787
+  ],
+  "Emergency Medicine|chrg_to_alowd": [
+   5.638787936658023,
+   3.499686121744024
+  ],
+  "Emergency Medicine|drug_pymt_share": [
+   0.0,
+   0.03441794826437192
+  ],
+  "Emergency Medicine|risk_score": [
+   2.012,
+   0.4461143399999999
+  ],
+  "Emergency Medicine|pymt_per_bene_per_risk": [
+   63.70784531161891,
+   13.390438120371861
+  ],
+  "Emergency Medicine|pct_under65": [
+   0.125,
+   0.07879086826347305
+  ],
+  "Emergency Medicine|pct_dual": [
+   0.23921568627450981,
+   0.14444177348551362
+  ],
+  "Emergency Medicine|avg_age": [
+   74.0,
+   2.9652
+  ],
+  "Emergency Medicine|n_distinct_codes": [
+   18.0,
+   8.8956
+  ],
+  "Emergency Medicine|tot_benes": [
+   238.0,
+   185.325
+  ],
+  "Emergency Medicine|sameday_repeat_ratio": [
+   1.0,
+   0.06156745132369675
+  ],
+  "Emergency Medicine|em_high_share": [
+   0.6547619047619048,
+   0.3665653394952008
+  ],
+  "Emergency Medicine|top_code_pymt_share": [
+   0.6342327660468564,
+   0.14778194707425177
+  ],
+  "Emergency Medicine|facility_share": [
+   1.0,
+   0.25852949863951924
+  ],
+  "Emergency Medicine|n_service_rows": [
+   4.0,
+   1.4826
+  ],
+  "Endocrinology|srvcs_per_bene": [
+   3.5943225806451613,
+   2.491158157894737
+  ],
+  "Endocrinology|pymt_per_bene": [
+   198.1928718466951,
+   106.16821593033549
+  ],
+  "Endocrinology|chrg_to_alowd": [
+   2.4389202726208,
+   0.8005094586982529
+  ],
+  "Endocrinology|drug_pymt_share": [
+   0.0,
+   0.19511483733076027
+  ],
+  "Endocrinology|risk_score": [
+   1.4598499999999999,
+   0.3587891999999998
+  ],
+  "Endocrinology|pymt_per_bene_per_risk": [
+   129.89389495609066,
+   84.04362020089731
+  ],
+  "Endocrinology|pct_under65": [
+   0.04418380295607493,
+   0.06550690626267669
+  ],
+  "Endocrinology|pct_dual": [
+   0.08523274908078393,
+   0.09594753562505239
+  ],
+  "Endocrinology|avg_age": [
+   73.0,
+   2.9652
+  ],
+  "Endocrinology|n_distinct_codes": [
+   14.5,
+   6.6716999999999995
+  ],
+  "Endocrinology|tot_benes": [
+   201.0,
+   186.06629999999998
+  ],
+  "Endocrinology|sameday_repeat_ratio": [
+   1.0,
+   0.06538586850952896
+  ],
+  "Endocrinology|em_high_share": [
+   1.0,
+   0.1414379088095477
+  ],
+  "Endocrinology|top_code_pymt_share": [
+   0.52587881131236,
+   0.1485671801682709
+  ],
+  "Endocrinology|facility_share": [
+   0.0,
+   0.33772394469834244
+  ],
+  "Endocrinology|n_service_rows": [
+   7.0,
+   4.4478
+  ],
+  "Family Practice|srvcs_per_bene": [
+   3.728884590586718,
+   2.5903301131449346
+  ],
+  "Family Practice|pymt_per_bene": [
+   206.85335108048855,
+   131.69604150539402
+  ],
+  "Family Practice|chrg_to_alowd": [
+   2.300852236610023,
+   0.8007252939909385
+  ],
+  "Family Practice|drug_pymt_share": [
+   0.0,
+   0.10122064909418012
+  ],
+  "Family Practice|risk_score": [
+   1.12785,
+   0.28132334999999997
+  ],
+  "Family Practice|pymt_per_bene_per_risk": [
+   171.29012544495637,
+   133.5370343115606
+  ],
+  "Family Practice|pct_under65": [
+   0.0,
+   0.09358187917551586
+  ],
+  "Family Practice|pct_dual": [
+   0.08415873949854533,
+   0.12477374718054329
+  ],
+  "Family Practice|avg_age": [
+   73.0,
+   2.9652
+  ],
+  "Family Practice|n_distinct_codes": [
+   28.0,
+   22.238999999999997
+  ],
+  "Family Practice|tot_benes": [
+   151.0,
+   145.29479999999998
+  ],
+  "Family Practice|sameday_repeat_ratio": [
+   1.0,
+   0.6917640751780014
+  ],
+  "Family Practice|em_high_share": [
+   0.7359050445103857,
+   0.23421003815175914
+  ],
+  "Family Practice|top_code_pymt_share": [
+   0.4613099868979505,
+   0.178825782161983
+  ],
+  "Family Practice|facility_share": [
+   0.0,
+   0.35556260251572475
+  ],
+  "Family Practice|n_service_rows": [
+   8.0,
+   7.412999999999999
+  ],
+  "Gastroenterology|srvcs_per_bene": [
+   2.1897628641702114,
+   0.8015773407770961
+  ],
+  "Gastroenterology|pymt_per_bene": [
+   212.82352836105267,
+   72.06362002592515
+  ],
+  "Gastroenterology|chrg_to_alowd": [
+   4.168900592447403,
+   1.6736116147551214
+  ],
+  "Gastroenterology|drug_pymt_share": [
+   0.0,
+   0.17751492348772854
+  ],
+  "Gastroenterology|risk_score": [
+   1.4192,
+   0.41801907000000005
+  ],
+  "Gastroenterology|pymt_per_bene_per_risk": [
+   142.51579611470504,
+   81.39872274330081
+  ],
+  "Gastroenterology|pct_under65": [
+   0.06672829515139496,
+   0.08902893176219018
+  ],
+  "Gastroenterology|pct_dual": [
+   0.11075036075036074,
+   0.09718904857397508
+  ],
+  "Gastroenterology|avg_age": [
+   73.0,
+   1.4826
+  ],
+  "Gastroenterology|n_distinct_codes": [
+   32.0,
+   16.3086
+  ],
+  "Gastroenterology|tot_benes": [
+   293.0,
+   215.7183
+  ],
+  "Gastroenterology|sameday_repeat_ratio": [
+   1.0,
+   0.06592949289216163
+  ],
+  "Gastroenterology|em_high_share": [
+   0.8110549728156407,
+   0.28012989730353116
+  ],
+  "Gastroenterology|top_code_pymt_share": [
+   0.30779317107556253,
+   0.11840081408362466
+  ],
+  "Gastroenterology|facility_share": [
+   0.6275704493526276,
+   0.33956480650677545
+  ],
+  "Gastroenterology|n_service_rows": [
+   12.0,
+   5.9304
+  ],
+  "General Practice|srvcs_per_bene": [
+   3.225806451612903,
+   2.37335564516129
+  ],
+  "General Practice|pymt_per_bene": [
+   196.65672413793104,
+   146.11072394373866
+  ],
+  "General Practice|chrg_to_alowd": [
+   1.87029136016291,
+   0.5721297326727887
+  ],
+  "General Practice|drug_pymt_share": [
+   0.0,
+   0.02812616160512933
+  ],
+  "General Practice|risk_score": [
+   1.3729,
+   0.5447072399999999
+  ],
+  "General Practice|pymt_per_bene_per_risk": [
+   132.85922148654421,
+   95.24115856331574
+  ],
+  "General Practice|pct_under65": [
+   0.0,
+   0.1575866772752495
+  ],
+  "General Practice|pct_dual": [
+   0.06043956043956044,
+   0.0896076923076923
+  ],
+  "General Practice|avg_age": [
+   74.0,
+   4.4478
+  ],
+  "General Practice|n_distinct_codes": [
+   12.0,
+   11.8608
+  ],
+  "General Practice|tot_benes": [
+   38.0,
+   34.099799999999995
+  ],
+  "General Practice|sameday_repeat_ratio": [
+   1.0,
+   0.03629747940807518
+  ],
+  "General Practice|em_high_share": [
+   0.7960687960687961,
+   0.3023484029484029
+  ],
+  "General Practice|top_code_pymt_share": [
+   0.5617922704826361,
+   0.39580715533696215
+  ],
+  "General Practice|facility_share": [
+   0.0,
+   0.35687331322304755
+  ],
+  "General Practice|n_service_rows": [
+   3.0,
+   2.9652
+  ],
+  "General Surgery|srvcs_per_bene": [
+   2.0785152240848443,
+   0.5475985623227889
+  ],
+  "General Surgery|pymt_per_bene": [
+   323.60487293325167,
+   155.0526078043734
+  ],
+  "General Surgery|chrg_to_alowd": [
+   3.2583630026157886,
+   0.9987776233923484
+  ],
+  "General Surgery|drug_pymt_share": [
+   0.0,
+   0.05285218027351421
+  ],
+  "General Surgery|risk_score": [
+   1.6165,
+   0.5863683
+  ],
+  "General Surgery|pymt_per_bene_per_risk": [
+   189.20408548999768,
+   115.31762875023801
+  ],
+  "General Surgery|pct_under65": [
+   0.0,
+   0.10821630462598743
+  ],
+  "General Surgery|pct_dual": [
+   0.15584415584415584,
+   0.1898715955251439
+  ],
+  "General Surgery|avg_age": [
+   73.0,
+   2.9652
+  ],
+  "General Surgery|n_distinct_codes": [
+   36.0,
+   23.7216
+  ],
+  "General Surgery|tot_benes": [
+   120.0,
+   96.369
+  ],
+  "General Surgery|sameday_repeat_ratio": [
+   1.0,
+   0.0693012117158759
+  ],
+  "General Surgery|em_high_share": [
+   0.5466710613052077,
+   0.39845380523731583
+  ],
+  "General Surgery|top_code_pymt_share": [
+   0.4162633512238177,
+   0.2150196383823904
+  ],
+  "General Surgery|facility_share": [
+   0.6994535519125683,
+   0.4455901639344262
+  ],
+  "General Surgery|n_service_rows": [
+   5.0,
+   4.4478
+  ],
+  "Geriatric Medicine|srvcs_per_bene": [
+   3.24307401500384,
+   1.9727124121733972
+  ],
+  "Geriatric Medicine|pymt_per_bene": [
+   261.2190646579594,
+   117.70005722584742
+  ],
+  "Geriatric Medicine|chrg_to_alowd": [
+   2.4086155201494597,
+   0.8395611747623237
+  ],
+  "Geriatric Medicine|drug_pymt_share": [
+   0.0,
+   0.10377863139884856
+  ],
+  "Geriatric Medicine|risk_score": [
+   1.7330999999999999,
+   0.50601138
+  ],
+  "Geriatric Medicine|pymt_per_bene_per_risk": [
+   146.64923769202102,
+   78.26002634069846
+  ],
+  "Geriatric Medicine|pct_under65": [
+   0.0,
+   0.03748325695752772
+  ],
+  "Geriatric Medicine|pct_dual": [
+   0.10880375402717468,
+   0.16131244572068917
+  ],
+  "Geriatric Medicine|avg_age": [
+   81.0,
+   2.9652
+  ],
+  "Geriatric Medicine|n_distinct_codes": [
+   21.5,
+   14.825999999999999
+  ],
+  "Geriatric Medicine|tot_benes": [
+   185.5,
+   126.7623
+  ],
+  "Geriatric Medicine|sameday_repeat_ratio": [
+   1.0,
+   0.022561044873991985
+  ],
+  "Geriatric Medicine|em_high_share": [
+   0.947210741628807,
+   0.0782653544611307
+  ],
+  "Geriatric Medicine|top_code_pymt_share": [
+   0.37763094218972576,
+   0.14505304003733224
+  ],
+  "Geriatric Medicine|facility_share": [
+   0.15153664302600472,
+   0.2246682269503546
+  ],
+  "Geriatric Medicine|n_service_rows": [
+   8.0,
+   5.9304
+  ],
+  "Hematology-Oncology|srvcs_per_bene": [
+   3.819996616477753,
+   2.2331868399394947
+  ],
+  "Hematology-Oncology|pymt_per_bene": [
+   304.9155998226139,
+   188.02110392892973
+  ],
+  "Hematology-Oncology|chrg_to_alowd": [
+   2.9967087127188092,
+   1.1724641979696218
+  ],
+  "Hematology-Oncology|drug_pymt_share": [
+   0.0,
+   0.38127281662564455
+  ],
+  "Hematology-Oncology|risk_score": [
+   2.0416499999999997,
+   0.4763593800000005
+  ],
+  "Hematology-Oncology|pymt_per_bene_per_risk": [
+   137.70592842961892,
+   86.3879104702152
+  ],
+  "Hematology-Oncology|pct_under65": [
+   0.03990923108253571,
+   0.05916942600296744
+  ],
+  "Hematology-Oncology|pct_dual": [
+   0.10097029430219923,
+   0.0885262608695652
+  ],
+  "Hematology-Oncology|avg_age": [
+   74.5,
+   2.2239
+  ],
+  "Hematology-Oncology|n_distinct_codes": [
+   15.0,
+   7.412999999999999
+  ],
+  "Hematology-Oncology|tot_benes": [
+   194.5,
+   185.325
+  ],
+  "Hematology-Oncology|sameday_repeat_ratio": [
+   1.0,
+   0.042868308037755355
+  ],
+  "Hematology-Oncology|em_high_share": [
+   0.9607319965973146,
+   0.058218741844821426
+  ],
+  "Hematology-Oncology|top_code_pymt_share": [
+   0.48229602342494005,
+   0.1709575206613269
+  ],
+  "Hematology-Oncology|facility_share": [
+   0.18062032733724082,
+   0.2677876973101932
+  ],
+  "Hematology-Oncology|n_service_rows": [
+   6.5,
+   3.7064999999999997
+  ],
+  "Hospitalist|srvcs_per_bene": [
+   2.643835616438356,
+   0.7249088371054196
+  ],
+  "Hospitalist|pymt_per_bene": [
+   214.62633333333332,
+   71.4266063515789
+  ],
+  "Hospitalist|chrg_to_alowd": [
+   2.8574696792375645,
+   0.9130227825364086
+  ],
+  "Hospitalist|drug_pymt_share": [
+   0.0,
+   0.008352470559722727
+  ],
+  "Hospitalist|risk_score": [
+   2.5274,
+   0.4639055399999999
+  ],
+  "Hospitalist|pymt_per_bene_per_risk": [
+   83.6397000039503,
+   30.118100743072418
+  ],
+  "Hospitalist|pct_under65": [
+   0.09550561797752809,
+   0.05840464524554727
+  ],
+  "Hospitalist|pct_dual": [
+   0.23595505617977527,
+   0.1203769662921348
+  ],
+  "Hospitalist|avg_age": [
+   76.0,
+   2.9652
+  ],
+  "Hospitalist|n_distinct_codes": [
+   10.0,
+   2.9652
+  ],
+  "Hospitalist|tot_benes": [
+   196.0,
+   131.9514
+  ],
+  "Hospitalist|sameday_repeat_ratio": [
+   1.0,
+   0.03237677733580549
+  ],
+  "Hospitalist|em_high_share": [
+   1.0,
+   0.23854102972446195
+  ],
+  "Hospitalist|top_code_pymt_share": [
+   0.49803376407837335,
+   0.15789101882680623
+  ],
+  "Hospitalist|facility_share": [
+   1.0,
+   0.12352411674194752
+  ],
+  "Hospitalist|n_service_rows": [
+   5.0,
+   1.4826
+  ],
+  "Infectious Disease|srvcs_per_bene": [
+   2.7880794701986753,
+   1.225429699439633
+  ],
+  "Infectious Disease|pymt_per_bene": [
+   230.4767924528302,
+   106.3430888309916
+  ],
+  "Infectious Disease|chrg_to_alowd": [
+   2.7368168661905496,
+   1.0961069205450893
+  ],
+  "Infectious Disease|drug_pymt_share": [
+   0.0,
+   0.1385454874199579
+  ],
+  "Infectious Disease|risk_score": [
+   3.0056,
+   0.61246206
+  ],
+  "Infectious Disease|pymt_per_bene_per_risk": [
+   86.09146456380499,
+   36.217319669177094
+  ],
+  "Infectious Disease|pct_under65": [
+   0.10178117048346055,
+   0.1509007633587786
+  ],
+  "Infectious Disease|pct_dual": [
+   0.2808988764044944,
+   0.1611785549520054
+  ],
+  "Infectious Disease|avg_age": [
+   72.0,
+   4.4478
+  ],
+  "Infectious Disease|n_distinct_codes": [
+   11.0,
+   5.9304
+  ],
+  "Infectious Disease|tot_benes": [
+   133.0,
+   158.63819999999998
+  ],
+  "Infectious Disease|sameday_repeat_ratio": [
+   1.0,
+   0.03461752800117378
+  ],
+  "Infectious Disease|em_high_share": [
+   1.0,
+   0.22121048042611097
+  ],
+  "Infectious Disease|top_code_pymt_share": [
+   0.5180406540437932,
+   0.15443888041938372
+  ],
+  "Infectious Disease|facility_share": [
+   1.0,
+   0.24040084485958446
+  ],
+  "Infectious Disease|n_service_rows": [
+   5.0,
+   2.9652
+  ],
+  "Internal Medicine|srvcs_per_bene": [
+   3.185506684751017,
+   1.7023889473684208
+  ],
+  "Internal Medicine|pymt_per_bene": [
+   237.67017334360554,
+   119.81481377689364
+  ],
+  "Internal Medicine|chrg_to_alowd": [
+   2.4425515013509114,
+   0.9301423848921124
+  ],
+  "Internal Medicine|drug_pymt_share": [
+   0.0,
+   0.11308896391168125
+  ],
+  "Internal Medicine|risk_score": [
+   1.802,
+   0.9844464000000002
+  ],
+  "Internal Medicine|pymt_per_bene_per_risk": [
+   124.76738314603995,
+   88.17519605580624
+  ],
+  "Internal Medicine|pct_under65": [
+   0.050940669969332386,
+   0.0755246372965322
+  ],
+  "Internal Medicine|pct_dual": [
+   0.16974240676662822,
+   0.22392227640019435
+  ],
+  "Internal Medicine|avg_age": [
+   75.0,
+   2.9652
+  ],
+  "Internal Medicine|n_distinct_codes": [
+   15.0,
+   11.8608
+  ],
+  "Internal Medicine|tot_benes": [
+   183.0,
+   157.1556
+  ],
+  "Internal Medicine|sameday_repeat_ratio": [
+   1.0,
+   0.10124550856989034
+  ],
+  "Internal Medicine|em_high_share": [
+   0.8007352941176471,
+   0.2520300325550068
+  ],
+  "Internal Medicine|top_code_pymt_share": [
+   0.4676572805878943,
+   0.18269079451437775
+  ],
+  "Internal Medicine|facility_share": [
+   0.6057311078646115,
+   0.584543059479927
+  ],
+  "Internal Medicine|n_service_rows": [
+   6.0,
+   4.4478
+  ],
+  "Interventional Cardiology|srvcs_per_bene": [
+   2.63302752293578,
+   1.0606057721712536
+  ],
+  "Interventional Cardiology|pymt_per_bene": [
+   189.49494505494508,
+   149.0287704876141
+  ],
+  "Interventional Cardiology|chrg_to_alowd": [
+   2.9209434442813467,
+   1.136830505921174
+  ],
+  "Interventional Cardiology|drug_pymt_share": [
+   0.0,
+   0.014581585906930643
+  ],
+  "Interventional Cardiology|risk_score": [
+   1.6898,
+   0.26879538000000003
+  ],
+  "Interventional Cardiology|pymt_per_bene_per_risk": [
+   110.41711465450295,
+   90.45733046035099
+  ],
+  "Interventional Cardiology|pct_under65": [
+   0.053268765133171914,
+   0.02755661800724993
+  ],
+  "Interventional Cardiology|pct_dual": [
+   0.11668681983071343,
+   0.06794115648807006
+  ],
+  "Interventional Cardiology|avg_age": [
+   76.0,
+   1.4826
+  ],
+  "Interventional Cardiology|n_distinct_codes": [
+   64.0,
+   26.686799999999998
+  ],
+  "Interventional Cardiology|tot_benes": [
+   865.0,
+   598.9703999999999
+  ],
+  "Interventional Cardiology|sameday_repeat_ratio": [
+   1.0144611533502264,
+   0.019695574695186707
+  ],
+  "Interventional Cardiology|em_high_share": [
+   0.9640224590613362,
+   0.05334030219566293
+  ],
+  "Interventional Cardiology|top_code_pymt_share": [
+   0.2654610291338419,
+   0.10001456453290734
+  ],
+  "Interventional Cardiology|facility_share": [
+   0.5363839626551491,
+   0.3867302594928325
+  ],
+  "Interventional Cardiology|n_service_rows": [
+   22.0,
+   11.8608
+  ],
+  "Interventional Radiology|srvcs_per_bene": [
+   2.0027173913043477,
+   0.9259180718094953
+  ],
+  "Interventional Radiology|pymt_per_bene": [
+   123.49171195652173,
+   110.44067359125212
+  ],
+  "Interventional Radiology|chrg_to_alowd": [
+   5.065656488510752,
+   3.7705522694569327
+  ],
+  "Interventional Radiology|drug_pymt_share": [
+   0.0,
+   0.0015958149901079736
+  ],
+  "Interventional Radiology|risk_score": [
+   2.2058,
+   0.86939664
+  ],
+  "Interventional Radiology|pymt_per_bene_per_risk": [
+   52.76655453722666,
+   37.862970277382225
+  ],
+  "Interventional Radiology|pct_under65": [
+   0.10810810810810811,
+   0.07338957109283197
+  ],
+  "Interventional Radiology|pct_dual": [
+   0.1795946890286513,
+   0.11042560868115114
+  ],
+  "Interventional Radiology|avg_age": [
+   74.0,
+   2.9652
+  ],
+  "Interventional Radiology|n_distinct_codes": [
+   95.0,
+   59.303999999999995
+  ],
+  "Interventional Radiology|tot_benes": [
+   313.0,
+   326.17199999999997
+  ],
+  "Interventional Radiology|sameday_repeat_ratio": [
+   1.012857142857143,
+   0.01906200000000006
+  ],
+  "Interventional Radiology|em_high_share": [
+   0.24347826086956523,
+   0.19894808267997152
+  ],
+  "Interventional Radiology|top_code_pymt_share": [
+   0.2727764554359523,
+   0.19120943060887136
+  ],
+  "Interventional Radiology|facility_share": [
+   1.0,
+   0.32368515557940764
+  ],
+  "Interventional Radiology|n_service_rows": [
+   17.0,
+   14.825999999999999
+  ],
+  "Licensed Clinical Social Worker|srvcs_per_bene": [
+   10.202380952380953,
+   7.838457894736842
+  ],
+  "Licensed Clinical Social Worker|pymt_per_bene": [
+   714.7120833333333,
+   671.2904305153846
+  ],
+  "Licensed Clinical Social Worker|chrg_to_alowd": [
+   1.8644947791068893,
+   0.7315253130587854
+  ],
+  "Licensed Clinical Social Worker|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Licensed Clinical Social Worker|risk_score": [
+   1.25825,
+   0.3943716000000001
+  ],
+  "Licensed Clinical Social Worker|pymt_per_bene_per_risk": [
+   484.2316827731481,
+   501.1085526650777
+  ],
+  "Licensed Clinical Social Worker|pct_under65": [
+   0.0,
+   0.12630702052445833
+  ],
+  "Licensed Clinical Social Worker|pct_dual": [
+   0.0,
+   0.2407715540719365
+  ],
+  "Licensed Clinical Social Worker|avg_age": [
+   69.0,
+   7.412999999999999
+  ],
+  "Licensed Clinical Social Worker|n_distinct_codes": [
+   4.0,
+   1.4826
+  ],
+  "Licensed Clinical Social Worker|tot_benes": [
+   19.0,
+   10.3782
+  ],
+  "Licensed Clinical Social Worker|sameday_repeat_ratio": [
+   1.0,
+   0.033348642624084844
+  ],
+  "Licensed Clinical Social Worker|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Licensed Clinical Social Worker|top_code_pymt_share": [
+   1.0,
+   0.15588148125475956
+  ],
+  "Licensed Clinical Social Worker|facility_share": [
+   0.0,
+   0.1910985183213513
+  ],
+  "Licensed Clinical Social Worker|n_service_rows": [
+   1.0,
+   0.9226233630385481
+  ],
+  "Licensed Professional Counselor|srvcs_per_bene": [
+   6.2,
+   3.63237
+  ],
+  "Licensed Professional Counselor|pymt_per_bene": [
+   386.05100000000004,
+   264.4758248999999
+  ],
+  "Licensed Professional Counselor|chrg_to_alowd": [
+   1.994878968925341,
+   0.6071506201241423
+  ],
+  "Licensed Professional Counselor|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Licensed Professional Counselor|risk_score": [
+   1.1986,
+   0.3756908400000001
+  ],
+  "Licensed Professional Counselor|pymt_per_bene_per_risk": [
+   296.4004093800228,
+   237.83229411509254
+  ],
+  "Licensed Professional Counselor|pct_under65": [
+   0.0,
+   0.12540487019412783
+  ],
+  "Licensed Professional Counselor|pct_dual": [
+   0.0,
+   0.28161904957854117
+  ],
+  "Licensed Professional Counselor|avg_age": [
+   63.0,
+   8.8956
+  ],
+  "Licensed Professional Counselor|n_distinct_codes": [
+   3.0,
+   1.4826
+  ],
+  "Licensed Professional Counselor|tot_benes": [
+   17.0,
+   5.9304
+  ],
+  "Licensed Professional Counselor|sameday_repeat_ratio": [
+   1.0,
+   1.0
+  ],
+  "Licensed Professional Counselor|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Licensed Professional Counselor|top_code_pymt_share": [
+   0.9496457744089568,
+   0.07465517486128063
+  ],
+  "Licensed Professional Counselor|facility_share": [
+   0.0,
+   0.061263965778672026
+  ],
+  "Licensed Professional Counselor|n_service_rows": [
+   2.0,
+   1.4826
+  ],
+  "Mass Immunizer Roster Biller|srvcs_per_bene": [
+   3.1679734447433185,
+   0.24903742917644406
+  ],
+  "Mass Immunizer Roster Biller|pymt_per_bene": [
+   237.23336719706242,
+   27.715146058189664
+  ],
+  "Mass Immunizer Roster Biller|chrg_to_alowd": [
+   1.0305955662184454,
+   0.011527943279642242
+  ],
+  "Mass Immunizer Roster Biller|drug_pymt_share": [
+   0.7815836603624094,
+   0.023276685506318402
+  ],
+  "Mass Immunizer Roster Biller|risk_score": [
+   0.9558,
+   0.12794838000000006
+  ],
+  "Mass Immunizer Roster Biller|pymt_per_bene_per_risk": [
+   243.93666174340632,
+   49.93611340075504
+  ],
+  "Mass Immunizer Roster Biller|pct_under65": [
+   0.0,
+   0.05545156111418331
+  ],
+  "Mass Immunizer Roster Biller|pct_dual": [
+   0.020776267078373756,
+   0.03080289357039693
+  ],
+  "Mass Immunizer Roster Biller|avg_age": [
+   75.0,
+   1.4826
+  ],
+  "Mass Immunizer Roster Biller|n_distinct_codes": [
+   10.0,
+   1.4826
+  ],
+  "Mass Immunizer Roster Biller|tot_benes": [
+   172.0,
+   136.39919999999998
+  ],
+  "Mass Immunizer Roster Biller|sameday_repeat_ratio": [
+   1.0,
+   0.0001525030916265842
+  ],
+  "Mass Immunizer Roster Biller|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Mass Immunizer Roster Biller|top_code_pymt_share": [
+   0.4114798235127571,
+   0.12596012345209642
+  ],
+  "Mass Immunizer Roster Biller|facility_share": [
+   0.0,
+   1.0
+  ],
+  "Mass Immunizer Roster Biller|n_service_rows": [
+   6.0,
+   1.4826
+  ],
+  "Medical Oncology|srvcs_per_bene": [
+   3.617283950617284,
+   1.9934397306397302
+  ],
+  "Medical Oncology|pymt_per_bene": [
+   299.35322916666667,
+   148.5655253038793
+  ],
+  "Medical Oncology|chrg_to_alowd": [
+   3.0963820027070637,
+   0.9155669087145645
+  ],
+  "Medical Oncology|drug_pymt_share": [
+   0.0,
+   0.38419505956086936
+  ],
+  "Medical Oncology|risk_score": [
+   2.2529,
+   0.6017873399999999
+  ],
+  "Medical Oncology|pymt_per_bene_per_risk": [
+   133.36446716527956,
+   74.40254086208354
+  ],
+  "Medical Oncology|pct_under65": [
+   0.0,
+   0.05215438580892938
+  ],
+  "Medical Oncology|pct_dual": [
+   0.12612612612612611,
+   0.11426327383987758
+  ],
+  "Medical Oncology|avg_age": [
+   74.0,
+   1.4826
+  ],
+  "Medical Oncology|n_distinct_codes": [
+   14.0,
+   5.9304
+  ],
+  "Medical Oncology|tot_benes": [
+   145.0,
+   134.9166
+  ],
+  "Medical Oncology|sameday_repeat_ratio": [
+   1.0,
+   0.24874122776172478
+  ],
+  "Medical Oncology|em_high_share": [
+   0.9488065753310133,
+   0.07589937141423966
+  ],
+  "Medical Oncology|top_code_pymt_share": [
+   0.48720568713155293,
+   0.1747027620846245
+  ],
+  "Medical Oncology|facility_share": [
+   0.31234866828087166,
+   0.4630881355932203
+  ],
+  "Medical Oncology|n_service_rows": [
+   7.0,
+   4.4478
+  ],
+  "Nephrology|srvcs_per_bene": [
+   4.0245098039215685,
+   1.790748235294117
+  ],
+  "Nephrology|pymt_per_bene": [
+   377.08181818181816,
+   139.53254843756844
+  ],
+  "Nephrology|chrg_to_alowd": [
+   2.387117591055075,
+   0.7141107948299755
+  ],
+  "Nephrology|drug_pymt_share": [
+   0.0,
+   0.033342169003044306
+  ],
+  "Nephrology|risk_score": [
+   4.1734,
+   1.38341406
+  ],
+  "Nephrology|pymt_per_bene_per_risk": [
+   93.51407474338225,
+   42.288335858564
+  ],
+  "Nephrology|pct_under65": [
+   0.17724867724867724,
+   0.08868540265035675
+  ],
+  "Nephrology|pct_dual": [
+   0.25,
+   0.13237500000000002
+  ],
+  "Nephrology|avg_age": [
+   72.0,
+   4.4478
+  ],
+  "Nephrology|n_distinct_codes": [
+   19.0,
+   7.412999999999999
+  ],
+  "Nephrology|tot_benes": [
+   307.0,
+   220.9074
+  ],
+  "Nephrology|sameday_repeat_ratio": [
+   1.0,
+   0.03421652215604604
+  ],
+  "Nephrology|em_high_share": [
+   1.0,
+   0.24143036523323752
+  ],
+  "Nephrology|top_code_pymt_share": [
+   0.37913303934219195,
+   0.1484846290712063
+  ],
+  "Nephrology|facility_share": [
+   0.5237717908082409,
+   0.3168622853316846
+  ],
+  "Nephrology|n_service_rows": [
+   10.0,
+   4.4478
+  ],
+  "Neurology|srvcs_per_bene": [
+   2.6259402291887524,
+   1.464283512620078
+  ],
+  "Neurology|pymt_per_bene": [
+   214.35229978157992,
+   94.74821073876653
+  ],
+  "Neurology|chrg_to_alowd": [
+   2.8302969815317027,
+   0.9448915820756529
+  ],
+  "Neurology|drug_pymt_share": [
+   0.0,
+   0.1897265192731673
+  ],
+  "Neurology|risk_score": [
+   1.6474,
+   0.39718854000000003
+  ],
+  "Neurology|pymt_per_bene_per_risk": [
+   129.33895868773408,
+   76.07960301680784
+  ],
+  "Neurology|pct_under65": [
+   0.08725778511863996,
+   0.12536691176470588
+  ],
+  "Neurology|pct_dual": [
+   0.17629629629629628,
+   0.1457513009708738
+  ],
+  "Neurology|avg_age": [
+   73.0,
+   2.9652
+  ],
+  "Neurology|n_distinct_codes": [
+   19.0,
+   10.3782
+  ],
+  "Neurology|tot_benes": [
+   184.5,
+   146.0361
+  ],
+  "Neurology|sameday_repeat_ratio": [
+   1.0,
+   0.29993623871255437
+  ],
+  "Neurology|em_high_share": [
+   1.0,
+   0.1836026265455623
+  ],
+  "Neurology|top_code_pymt_share": [
+   0.39359427056181207,
+   0.15930837307282392
+  ],
+  "Neurology|facility_share": [
+   0.30327868852459017,
+   0.44964098360655735
+  ],
+  "Neurology|n_service_rows": [
+   7.0,
+   4.4478
+  ],
+  "Neurosurgery|srvcs_per_bene": [
+   2.4713375796178343,
+   0.6988050955414011
+  ],
+  "Neurosurgery|pymt_per_bene": [
+   541.2144144144145,
+   245.16172861087594
+  ],
+  "Neurosurgery|chrg_to_alowd": [
+   4.369575309158795,
+   2.150824947940733
+  ],
+  "Neurosurgery|drug_pymt_share": [
+   0.0,
+   0.006441370775458457
+  ],
+  "Neurosurgery|risk_score": [
+   1.4325,
+   0.28658658000000004
+  ],
+  "Neurosurgery|pymt_per_bene_per_risk": [
+   405.0121241791319,
+   243.51392007005245
+  ],
+  "Neurosurgery|pct_under65": [
+   0.05555555555555555,
+   0.08236666666666666
+  ],
+  "Neurosurgery|pct_dual": [
+   0.10550458715596331,
+   0.07734985343941526
+  ],
+  "Neurosurgery|avg_age": [
+   73.0,
+   1.4826
+  ],
+  "Neurosurgery|n_distinct_codes": [
+   44.0,
+   17.7912
+  ],
+  "Neurosurgery|tot_benes": [
+   141.0,
+   85.9908
+  ],
+  "Neurosurgery|sameday_repeat_ratio": [
+   1.0015673981191222,
+   0.002323824451410588
+  ],
+  "Neurosurgery|em_high_share": [
+   0.73568281938326,
+   0.39187665198237875
+  ],
+  "Neurosurgery|top_code_pymt_share": [
+   0.34835418210300945,
+   0.13827724308076988
+  ],
+  "Neurosurgery|facility_share": [
+   0.4720748900675461,
+   0.41409551566798997
+  ],
+  "Neurosurgery|n_service_rows": [
+   7.0,
+   5.9304
+  ],
+  "Nurse Practitioner|srvcs_per_bene": [
+   2.3798076923076925,
+   1.5455486677479149
+  ],
+  "Nurse Practitioner|pymt_per_bene": [
+   121.72383275261323,
+   68.77660871939148
+  ],
+  "Nurse Practitioner|chrg_to_alowd": [
+   2.7330404757244726,
+   1.0871208321837167
+  ],
+  "Nurse Practitioner|drug_pymt_share": [
+   0.0,
+   0.13031718772932008
+  ],
+  "Nurse Practitioner|risk_score": [
+   1.445,
+   0.6615361200000001
+  ],
+  "Nurse Practitioner|pymt_per_bene_per_risk": [
+   82.91917895993613,
+   57.3427897825022
+  ],
+  "Nurse Practitioner|pct_under65": [
+   0.0,
+   0.133421937414035
+  ],
+  "Nurse Practitioner|pct_dual": [
+   0.08505154639175258,
+   0.12609742268041238
+  ],
+  "Nurse Practitioner|avg_age": [
+   73.0,
+   4.4478
+  ],
+  "Nurse Practitioner|n_distinct_codes": [
+   11.0,
+   8.8956
+  ],
+  "Nurse Practitioner|tot_benes": [
+   94.0,
+   93.40379999999999
+  ],
+  "Nurse Practitioner|sameday_repeat_ratio": [
+   1.0,
+   0.6044967982576274
+  ],
+  "Nurse Practitioner|em_high_share": [
+   0.7474575102561452,
+   0.3744194952942392
+  ],
+  "Nurse Practitioner|top_code_pymt_share": [
+   0.5827151407204876,
+   0.25365474021245527
+  ],
+  "Nurse Practitioner|facility_share": [
+   0.0,
+   0.44678350932201355
+  ],
+  "Nurse Practitioner|n_service_rows": [
+   4.0,
+   2.9652
+  ],
+  "Obstetrics & Gynecology|srvcs_per_bene": [
+   2.0616698292220113,
+   0.7111398158976405
+  ],
+  "Obstetrics & Gynecology|pymt_per_bene": [
+   146.92613428943937,
+   68.82577529618501
+  ],
+  "Obstetrics & Gynecology|chrg_to_alowd": [
+   2.7993063625864316,
+   1.0184325009691684
+  ],
+  "Obstetrics & Gynecology|drug_pymt_share": [
+   0.0,
+   0.06435315114605941
+  ],
+  "Obstetrics & Gynecology|risk_score": [
+   0.88035,
+   0.21564416999999994
+  ],
+  "Obstetrics & Gynecology|pymt_per_bene_per_risk": [
+   158.44291481858204,
+   79.26339637892954
+  ],
+  "Obstetrics & Gynecology|pct_under65": [
+   0.0,
+   0.14049471648238934
+  ],
+  "Obstetrics & Gynecology|pct_dual": [
+   0.0,
+   0.1494094575232198
+  ],
+  "Obstetrics & Gynecology|avg_age": [
+   70.0,
+   2.9652
+  ],
+  "Obstetrics & Gynecology|n_distinct_codes": [
+   16.5,
+   8.1543
+  ],
+  "Obstetrics & Gynecology|tot_benes": [
+   42.0,
+   32.6172
+  ],
+  "Obstetrics & Gynecology|sameday_repeat_ratio": [
+   1.0,
+   0.03866748374349989
+  ],
+  "Obstetrics & Gynecology|em_high_share": [
+   0.5625,
+   0.38468977272727267
+  ],
+  "Obstetrics & Gynecology|top_code_pymt_share": [
+   0.5468504347291061,
+   0.29919359369460374
+  ],
+  "Obstetrics & Gynecology|facility_share": [
+   0.0,
+   0.235847442503318
+  ],
+  "Obstetrics & Gynecology|n_service_rows": [
+   3.0,
+   2.9652
+  ],
+  "Occupational Therapist in Private Practice|srvcs_per_bene": [
+   31.272727272727273,
+   29.46948295454545
+  ],
+  "Occupational Therapist in Private Practice|pymt_per_bene": [
+   675.539090909091,
+   611.0188836818182
+  ],
+  "Occupational Therapist in Private Practice|chrg_to_alowd": [
+   2.4237138848610047,
+   0.8773831160955131
+  ],
+  "Occupational Therapist in Private Practice|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Occupational Therapist in Private Practice|risk_score": [
+   1.5247,
+   0.7279565999999997
+  ],
+  "Occupational Therapist in Private Practice|pymt_per_bene_per_risk": [
+   499.03449913445786,
+   369.46871705221594
+  ],
+  "Occupational Therapist in Private Practice|pct_under65": [
+   0.0,
+   0.05481179596927583
+  ],
+  "Occupational Therapist in Private Practice|pct_dual": [
+   0.0,
+   0.1770388325557159
+  ],
+  "Occupational Therapist in Private Practice|avg_age": [
+   75.0,
+   5.9304
+  ],
+  "Occupational Therapist in Private Practice|n_distinct_codes": [
+   8.0,
+   2.9652
+  ],
+  "Occupational Therapist in Private Practice|tot_benes": [
+   39.0,
+   26.686799999999998
+  ],
+  "Occupational Therapist in Private Practice|sameday_repeat_ratio": [
+   1.549283154121864,
+   0.4559364350703061
+  ],
+  "Occupational Therapist in Private Practice|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Occupational Therapist in Private Practice|top_code_pymt_share": [
+   0.44934489732926103,
+   0.1346019315996383
+  ],
+  "Occupational Therapist in Private Practice|facility_share": [
+   0.0,
+   1.0
+  ],
+  "Occupational Therapist in Private Practice|n_service_rows": [
+   5.0,
+   1.4826
+  ],
+  "Ophthalmology|srvcs_per_bene": [
+   3.3945904978006753,
+   1.8534593032460451
+  ],
+  "Ophthalmology|pymt_per_bene": [
+   290.3154652843749,
+   181.41831442689514
+  ],
+  "Ophthalmology|chrg_to_alowd": [
+   2.517990717316557,
+   0.8995325874757553
+  ],
+  "Ophthalmology|drug_pymt_share": [
+   0.0,
+   0.2773686587156077
+  ],
+  "Ophthalmology|risk_score": [
+   1.1425999999999998,
+   0.2005957799999996
+  ],
+  "Ophthalmology|pymt_per_bene_per_risk": [
+   247.05883020040716,
+   166.94857661153515
+  ],
+  "Ophthalmology|pct_under65": [
+   0.024029215688887114,
+   0.035625715180344034
+  ],
+  "Ophthalmology|pct_dual": [
+   0.07103437401450646,
+   0.08004307604671401
+  ],
+  "Ophthalmology|avg_age": [
+   76.0,
+   1.4826
+  ],
+  "Ophthalmology|n_distinct_codes": [
+   31.0,
+   14.825999999999999
+  ],
+  "Ophthalmology|tot_benes": [
+   604.0,
+   469.9842
+  ],
+  "Ophthalmology|sameday_repeat_ratio": [
+   1.0,
+   0.1104754743259433
+  ],
+  "Ophthalmology|em_high_share": [
+   0.6218637992831542,
+   0.3628525296902583
+  ],
+  "Ophthalmology|top_code_pymt_share": [
+   0.39113653755262834,
+   0.12117625140691385
+  ],
+  "Ophthalmology|facility_share": [
+   0.0365088533554328,
+   0.05412802598476467
+  ],
+  "Ophthalmology|n_service_rows": [
+   13.5,
+   6.6716999999999995
+  ],
+  "Optometry|srvcs_per_bene": [
+   1.9401531983325928,
+   0.8189808023787135
+  ],
+  "Optometry|pymt_per_bene": [
+   108.23533580139372,
+   33.20171007881138
+  ],
+  "Optometry|chrg_to_alowd": [
+   1.514042529999339,
+   0.4142075875483761
+  ],
+  "Optometry|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Optometry|risk_score": [
+   0.98835,
+   0.17613287999999994
+  ],
+  "Optometry|pymt_per_bene_per_risk": [
+   110.82597717236501,
+   37.954459131619274
+  ],
+  "Optometry|pct_under65": [
+   0.0,
+   0.05652496364992793
+  ],
+  "Optometry|pct_dual": [
+   0.0,
+   0.15225852100499082
+  ],
+  "Optometry|avg_age": [
+   74.0,
+   1.4826
+  ],
+  "Optometry|n_distinct_codes": [
+   13.0,
+   5.9304
+  ],
+  "Optometry|tot_benes": [
+   161.5,
+   153.4491
+  ],
+  "Optometry|sameday_repeat_ratio": [
+   1.0,
+   1.459968592218853
+  ],
+  "Optometry|em_high_share": [
+   0.512396694214876,
+   0.33276276642018265
+  ],
+  "Optometry|top_code_pymt_share": [
+   0.493599121677485,
+   0.1688800743494103
+  ],
+  "Optometry|facility_share": [
+   0.0,
+   0.09578768604276255
+  ],
+  "Optometry|n_service_rows": [
+   6.0,
+   4.4478
+  ],
+  "Orthopedic Surgery|srvcs_per_bene": [
+   5.246704331450094,
+   3.4992845470183482
+  ],
+  "Orthopedic Surgery|pymt_per_bene": [
+   404.86827727421326,
+   132.2929633678361
+  ],
+  "Orthopedic Surgery|chrg_to_alowd": [
+   3.4889078598016683,
+   1.2542114188930207
+  ],
+  "Orthopedic Surgery|drug_pymt_share": [
+   0.007303759581342866,
+   0.010828553955298933
+  ],
+  "Orthopedic Surgery|risk_score": [
+   1.11105,
+   0.21512526000000007
+  ],
+  "Orthopedic Surgery|pymt_per_bene_per_risk": [
+   332.76983786720353,
+   117.7313057830369
+  ],
+  "Orthopedic Surgery|pct_under65": [
+   0.035187512745706,
+   0.052169006396783714
+  ],
+  "Orthopedic Surgery|pct_dual": [
+   0.07095347556658771,
+   0.10519562287502293
+  ],
+  "Orthopedic Surgery|avg_age": [
+   74.0,
+   1.4826
+  ],
+  "Orthopedic Surgery|n_distinct_codes": [
+   53.0,
+   30.3933
+  ],
+  "Orthopedic Surgery|tot_benes": [
+   253.5,
+   201.6336
+  ],
+  "Orthopedic Surgery|sameday_repeat_ratio": [
+   1.019536281665951,
+   0.02896449119793896
+  ],
+  "Orthopedic Surgery|em_high_share": [
+   0.40854700854700854,
+   0.2613991432253477
+  ],
+  "Orthopedic Surgery|top_code_pymt_share": [
+   0.32789787134308757,
+   0.13713288808574942
+  ],
+  "Orthopedic Surgery|facility_share": [
+   0.030779308452828426,
+   0.04563340271216342
+  ],
+  "Orthopedic Surgery|n_service_rows": [
+   12.0,
+   7.412999999999999
+  ],
+  "Otolaryngology|srvcs_per_bene": [
+   2.8181818181818183,
+   1.187692773892774
+  ],
+  "Otolaryngology|pymt_per_bene": [
+   238.59547730829422,
+   118.157217342723
+  ],
+  "Otolaryngology|chrg_to_alowd": [
+   3.103495379564143,
+   1.240710903023246
+  ],
+  "Otolaryngology|drug_pymt_share": [
+   0.0,
+   0.02062387902262821
+  ],
+  "Otolaryngology|risk_score": [
+   1.1983,
+   0.19688928000000003
+  ],
+  "Otolaryngology|pymt_per_bene_per_risk": [
+   194.25809667328014,
+   109.52170281880423
+  ],
+  "Otolaryngology|pct_under65": [
+   0.04752851711026616,
+   0.0704657794676806
+  ],
+  "Otolaryngology|pct_dual": [
+   0.0945945945945946,
+   0.09384879089615929
+  ],
+  "Otolaryngology|avg_age": [
+   74.0,
+   1.4826
+  ],
+  "Otolaryngology|n_distinct_codes": [
+   40.0,
+   22.238999999999997
+  ],
+  "Otolaryngology|tot_benes": [
+   222.0,
+   212.0118
+  ],
+  "Otolaryngology|sameday_repeat_ratio": [
+   1.0,
+   0.43784410013963854
+  ],
+  "Otolaryngology|em_high_share": [
+   0.41624365482233505,
+   0.30539668879344006
+  ],
+  "Otolaryngology|top_code_pymt_share": [
+   0.2963203532961261,
+   0.09802408958688222
+  ],
+  "Otolaryngology|facility_share": [
+   0.0,
+   0.343315386831203
+  ],
+  "Otolaryngology|n_service_rows": [
+   9.0,
+   4.4478
+  ],
+  "Pain Management|srvcs_per_bene": [
+   7.111731843575419,
+   5.948714500850133
+  ],
+  "Pain Management|pymt_per_bene": [
+   420.7015485074627,
+   284.8581014693381
+  ],
+  "Pain Management|chrg_to_alowd": [
+   3.8920129375693215,
+   2.304488862336345
+  ],
+  "Pain Management|drug_pymt_share": [
+   0.0009657845234969692,
+   0.0014318721345366065
+  ],
+  "Pain Management|risk_score": [
+   1.3855,
+   0.22283478000000015
+  ],
+  "Pain Management|pymt_per_bene_per_risk": [
+   270.78346237009134,
+   184.31748070727951
+  ],
+  "Pain Management|pct_under65": [
+   0.1375921375921376,
+   0.1257058968058968
+  ],
+  "Pain Management|pct_dual": [
+   0.1349206349206349,
+   0.14745104166666667
+  ],
+  "Pain Management|avg_age": [
+   72.0,
+   2.9652
+  ],
+  "Pain Management|n_distinct_codes": [
+   42.0,
+   23.7216
+  ],
+  "Pain Management|tot_benes": [
+   205.0,
+   164.5686
+  ],
+  "Pain Management|sameday_repeat_ratio": [
+   1.0,
+   0.45209213887711636
+  ],
+  "Pain Management|em_high_share": [
+   0.8528841418369859,
+   0.21811397131248467
+  ],
+  "Pain Management|top_code_pymt_share": [
+   0.35538454687474025,
+   0.14444422480559027
+  ],
+  "Pain Management|facility_share": [
+   0.047701647875108416,
+   0.07072246313963573
+  ],
+  "Pain Management|n_service_rows": [
+   13.0,
+   10.3782
+  ],
+  "Pathology|srvcs_per_bene": [
+   2.90636505239309,
+   0.7288383884649762
+  ],
+  "Pathology|pymt_per_bene": [
+   89.36806383623738,
+   31.25462234211944
+  ],
+  "Pathology|chrg_to_alowd": [
+   4.314866913322721,
+   1.7858899285066858
+  ],
+  "Pathology|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Pathology|risk_score": [
+   1.52245,
+   0.5021566199999999
+  ],
+  "Pathology|pymt_per_bene_per_risk": [
+   55.771102798185126,
+   26.295891826038
+  ],
+  "Pathology|pct_under65": [
+   0.07084538428713669,
+   0.04844338926513696
+  ],
+  "Pathology|pct_dual": [
+   0.11578882750153469,
+   0.08552893126610231
+  ],
+  "Pathology|avg_age": [
+   73.0,
+   1.4826
+  ],
+  "Pathology|n_distinct_codes": [
+   20.0,
+   8.8956
+  ],
+  "Pathology|tot_benes": [
+   528.0,
+   432.9192
+  ],
+  "Pathology|sameday_repeat_ratio": [
+   1.6388384754990926,
+   0.3016079524830887
+  ],
+  "Pathology|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Pathology|top_code_pymt_share": [
+   0.37302343030503377,
+   0.19628265772252507
+  ],
+  "Pathology|facility_share": [
+   1.0,
+   0.35766674382888336
+  ],
+  "Pathology|n_service_rows": [
+   11.0,
+   7.412999999999999
+  ],
+  "Pediatric Medicine|srvcs_per_bene": [
+   2.812274368231047,
+   1.1170662136334681
+  ],
+  "Pediatric Medicine|pymt_per_bene": [
+   194.60858407079647,
+   89.01339604658865
+  ],
+  "Pediatric Medicine|chrg_to_alowd": [
+   2.506650715743694,
+   1.0517191925417124
+  ],
+  "Pediatric Medicine|drug_pymt_share": [
+   0.0,
+   0.26186386965219904
+  ],
+  "Pediatric Medicine|risk_score": [
+   1.1955,
+   0.2652371400000001
+  ],
+  "Pediatric Medicine|pymt_per_bene_per_risk": [
+   137.2548446477747,
+   78.97869489668396
+  ],
+  "Pediatric Medicine|pct_under65": [
+   0.036827195467422094,
+   0.054599999999999996
+  ],
+  "Pediatric Medicine|pct_dual": [
+   0.09386281588447654,
+   0.1391610108303249
+  ],
+  "Pediatric Medicine|avg_age": [
+   71.0,
+   4.4478
+  ],
+  "Pediatric Medicine|n_distinct_codes": [
+   17.0,
+   13.343399999999999
+  ],
+  "Pediatric Medicine|tot_benes": [
+   127.0,
+   139.3644
+  ],
+  "Pediatric Medicine|sameday_repeat_ratio": [
+   1.0,
+   0.46602091515868815
+  ],
+  "Pediatric Medicine|em_high_share": [
+   0.7735849056603774,
+   0.20627201317532484
+  ],
+  "Pediatric Medicine|top_code_pymt_share": [
+   0.5402741813830596,
+   0.15247371837420712
+  ],
+  "Pediatric Medicine|facility_share": [
+   0.0,
+   0.43415746235444724
+  ],
+  "Pediatric Medicine|n_service_rows": [
+   6.0,
+   4.4478
+  ],
+  "Pharmacy|srvcs_per_bene": [
+   2.7637072434607646,
+   0.61775
+  ],
+  "Pharmacy|pymt_per_bene": [
+   207.6835692472133,
+   56.68909445111112
+  ],
+  "Pharmacy|chrg_to_alowd": [
+   1.2224652835529746,
+   0.2969731167045922
+  ],
+  "Pharmacy|drug_pymt_share": [
+   0.7708030970778841,
+   0.025561509145712497
+  ],
+  "Pharmacy|risk_score": [
+   1.06315,
+   0.19155192000000004
+  ],
+  "Pharmacy|pymt_per_bene_per_risk": [
+   175.93637021738002,
+   75.73898895023505
+  ],
+  "Pharmacy|pct_under65": [
+   0.0,
+   0.03866260268816683
+  ],
+  "Pharmacy|pct_dual": [
+   0.0,
+   0.21551137130633072
+  ],
+  "Pharmacy|avg_age": [
+   75.0,
+   1.4826
+  ],
+  "Pharmacy|n_distinct_codes": [
+   8.0,
+   2.9652
+  ],
+  "Pharmacy|tot_benes": [
+   66.0,
+   63.01049999999999
+  ],
+  "Pharmacy|sameday_repeat_ratio": [
+   1.0,
+   1.0
+  ],
+  "Pharmacy|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Pharmacy|top_code_pymt_share": [
+   0.5013617150412937,
+   0.22561006953605175
+  ],
+  "Pharmacy|facility_share": [
+   0.0,
+   1.0
+  ],
+  "Pharmacy|n_service_rows": [
+   4.0,
+   2.9652
+  ],
+  "Physical Medicine and Rehabilitation|srvcs_per_bene": [
+   5.445845832789879,
+   4.175267490573269
+  ],
+  "Physical Medicine and Rehabilitation|pymt_per_bene": [
+   332.2540836557888,
+   219.1950691983981
+  ],
+  "Physical Medicine and Rehabilitation|chrg_to_alowd": [
+   2.887070147156461,
+   1.0367707449599166
+  ],
+  "Physical Medicine and Rehabilitation|drug_pymt_share": [
+   0.0,
+   0.13028729545433299
+  ],
+  "Physical Medicine and Rehabilitation|risk_score": [
+   1.7325499999999998,
+   0.7358143800000002
+  ],
+  "Physical Medicine and Rehabilitation|pymt_per_bene_per_risk": [
+   203.1612015153379,
+   145.22986616656002
+  ],
+  "Physical Medicine and Rehabilitation|pct_under65": [
+   0.049735866022254695,
+   0.0737383949645948
+  ],
+  "Physical Medicine and Rehabilitation|pct_dual": [
+   0.1377627565053593,
+   0.15648011508951404
+  ],
+  "Physical Medicine and Rehabilitation|avg_age": [
+   74.0,
+   4.4478
+  ],
+  "Physical Medicine and Rehabilitation|n_distinct_codes": [
+   21.0,
+   17.7912
+  ],
+  "Physical Medicine and Rehabilitation|tot_benes": [
+   206.0,
+   178.6533
+  ],
+  "Physical Medicine and Rehabilitation|sameday_repeat_ratio": [
+   1.0,
+   0.22304515996337254
+  ],
+  "Physical Medicine and Rehabilitation|em_high_share": [
+   0.7294117647058823,
+   0.40117411764705885
+  ],
+  "Physical Medicine and Rehabilitation|top_code_pymt_share": [
+   0.46965148585797517,
+   0.21647886245928097
+  ],
+  "Physical Medicine and Rehabilitation|facility_share": [
+   0.42670635879573693,
+   0.6326348475505595
+  ],
+  "Physical Medicine and Rehabilitation|n_service_rows": [
+   7.0,
+   5.9304
+  ],
+  "Physical Therapist in Private Practice|srvcs_per_bene": [
+   27.095394736842103,
+   16.374797764280178
+  ],
+  "Physical Therapist in Private Practice|pymt_per_bene": [
+   560.9056875000001,
+   326.7609807964919
+  ],
+  "Physical Therapist in Private Practice|chrg_to_alowd": [
+   2.5864336126418053,
+   0.8796986561298897
+  ],
+  "Physical Therapist in Private Practice|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Physical Therapist in Private Practice|risk_score": [
+   1.03345,
+   0.22216760999999996
+  ],
+  "Physical Therapist in Private Practice|pymt_per_bene_per_risk": [
+   537.0004174739736,
+   313.53130184475094
+  ],
+  "Physical Therapist in Private Practice|pct_under65": [
+   0.0,
+   0.03356888375630461
+  ],
+  "Physical Therapist in Private Practice|pct_dual": [
+   0.0,
+   0.10148082930670796
+  ],
+  "Physical Therapist in Private Practice|avg_age": [
+   74.0,
+   1.4826
+  ],
+  "Physical Therapist in Private Practice|n_distinct_codes": [
+   9.0,
+   2.9652
+  ],
+  "Physical Therapist in Private Practice|tot_benes": [
+   58.0,
+   45.9606
+  ],
+  "Physical Therapist in Private Practice|sameday_repeat_ratio": [
+   1.3449367088607596,
+   0.2624727941865918
+  ],
+  "Physical Therapist in Private Practice|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Physical Therapist in Private Practice|top_code_pymt_share": [
+   0.4275751763820513,
+   0.14168285423366853
+  ],
+  "Physical Therapist in Private Practice|facility_share": [
+   0.0,
+   0.004554935085911117
+  ],
+  "Physical Therapist in Private Practice|n_service_rows": [
+   5.0,
+   1.4826
+  ],
+  "Physician Assistant|srvcs_per_bene": [
+   2.032258064516129,
+   1.2404528343250858
+  ],
+  "Physician Assistant|pymt_per_bene": [
+   108.351,
+   46.87003631780821
+  ],
+  "Physician Assistant|chrg_to_alowd": [
+   3.3462213096236777,
+   1.569702273448525
+  ],
+  "Physician Assistant|drug_pymt_share": [
+   0.0,
+   0.11347348532808584
+  ],
+  "Physician Assistant|risk_score": [
+   1.3025,
+   0.49029581999999994
+  ],
+  "Physician Assistant|pymt_per_bene_per_risk": [
+   79.5769166035513,
+   52.182121028640985
+  ],
+  "Physician Assistant|pct_under65": [
+   0.0,
+   0.10148420050548705
+  ],
+  "Physician Assistant|pct_dual": [
+   0.07207207207207207,
+   0.10685405405405404
+  ],
+  "Physician Assistant|avg_age": [
+   73.0,
+   2.9652
+  ],
+  "Physician Assistant|n_distinct_codes": [
+   16.0,
+   13.343399999999999
+  ],
+  "Physician Assistant|tot_benes": [
+   108.0,
+   106.74719999999999
+  ],
+  "Physician Assistant|sameday_repeat_ratio": [
+   1.0,
+   0.12371084080112234
+  ],
+  "Physician Assistant|em_high_share": [
+   0.5989304812834224,
+   0.38972351187867094
+  ],
+  "Physician Assistant|top_code_pymt_share": [
+   0.5347688932401409,
+   0.23576377876431936
+  ],
+  "Physician Assistant|facility_share": [
+   0.0,
+   0.4665050011033811
+  ],
+  "Physician Assistant|n_service_rows": [
+   4.0,
+   2.9652
+  ],
+  "Plastic and Reconstructive Surgery|srvcs_per_bene": [
+   3.0,
+   1.2391880597014928
+  ],
+  "Plastic and Reconstructive Surgery|pymt_per_bene": [
+   535.4635365853659,
+   264.3214632111682
+  ],
+  "Plastic and Reconstructive Surgery|chrg_to_alowd": [
+   3.6701632790109526,
+   1.9542048729845727
+  ],
+  "Plastic and Reconstructive Surgery|drug_pymt_share": [
+   0.0,
+   0.11583614231919256
+  ],
+  "Plastic and Reconstructive Surgery|risk_score": [
+   1.204,
+   0.33506759999999997
+  ],
+  "Plastic and Reconstructive Surgery|pymt_per_bene_per_risk": [
+   410.8993777829068,
+   273.60967573958266
+  ],
+  "Plastic and Reconstructive Surgery|pct_under65": [
+   0.0,
+   0.07303654170054569
+  ],
+  "Plastic and Reconstructive Surgery|pct_dual": [
+   0.0,
+   0.15798583877681951
+  ],
+  "Plastic and Reconstructive Surgery|avg_age": [
+   72.0,
+   2.9652
+  ],
+  "Plastic and Reconstructive Surgery|n_distinct_codes": [
+   43.0,
+   23.7216
+  ],
+  "Plastic and Reconstructive Surgery|tot_benes": [
+   59.0,
+   57.8214
+  ],
+  "Plastic and Reconstructive Surgery|sameday_repeat_ratio": [
+   1.0,
+   0.3298246751657215
+  ],
+  "Plastic and Reconstructive Surgery|em_high_share": [
+   0.39444444444444443,
+   0.28015949771689497
+  ],
+  "Plastic and Reconstructive Surgery|top_code_pymt_share": [
+   0.49687459936365963,
+   0.2429164438611712
+  ],
+  "Plastic and Reconstructive Surgery|facility_share": [
+   0.01749851134087587,
+   0.025943292913982563
+  ],
+  "Plastic and Reconstructive Surgery|n_service_rows": [
+   4.0,
+   2.9652
+  ],
+  "Podiatry|srvcs_per_bene": [
+   4.365853658536586,
+   2.0448677187948343
+  ],
+  "Podiatry|pymt_per_bene": [
+   232.23953007518796,
+   113.51468218755821
+  ],
+  "Podiatry|chrg_to_alowd": [
+   1.925850056909148,
+   0.7823544067355048
+  ],
+  "Podiatry|drug_pymt_share": [
+   0.0,
+   0.1333567903886924
+  ],
+  "Podiatry|risk_score": [
+   1.5737,
+   0.42432011999999997
+  ],
+  "Podiatry|pymt_per_bene_per_risk": [
+   146.04332243624881,
+   88.23097156013938
+  ],
+  "Podiatry|pct_under65": [
+   0.05412371134020619,
+   0.08024381443298968
+  ],
+  "Podiatry|pct_dual": [
+   0.15656565656565657,
+   0.16840217938699314
+  ],
+  "Podiatry|avg_age": [
+   76.0,
+   2.9652
+  ],
+  "Podiatry|n_distinct_codes": [
+   30.0,
+   19.273799999999998
+  ],
+  "Podiatry|tot_benes": [
+   281.0,
+   234.2508
+  ],
+  "Podiatry|sameday_repeat_ratio": [
+   1.0012052341597797,
+   0.0017868801652893666
+  ],
+  "Podiatry|em_high_share": [
+   0.1796030534351145,
+   0.160272121895319
+  ],
+  "Podiatry|top_code_pymt_share": [
+   0.3825477370465674,
+   0.14633730267573228
+  ],
+  "Podiatry|facility_share": [
+   0.0,
+   0.20046613584505074
+  ],
+  "Podiatry|n_service_rows": [
+   10.0,
+   5.9304
+  ],
+  "Psychiatry|srvcs_per_bene": [
+   4.064516129032258,
+   2.801539212784847
+  ],
+  "Psychiatry|pymt_per_bene": [
+   276.87045454545455,
+   186.97559590909088
+  ],
+  "Psychiatry|chrg_to_alowd": [
+   2.181878306274145,
+   0.8997119863849808
+  ],
+  "Psychiatry|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Psychiatry|risk_score": [
+   1.3307,
+   0.33402978000000005
+  ],
+  "Psychiatry|pymt_per_bene_per_risk": [
+   209.5802983789662,
+   165.51755986462354
+  ],
+  "Psychiatry|pct_under65": [
+   0.0,
+   0.2740132352741123
+  ],
+  "Psychiatry|pct_dual": [
+   0.11914893617021277,
+   0.17665021276595744
+  ],
+  "Psychiatry|avg_age": [
+   62.0,
+   8.8956
+  ],
+  "Psychiatry|n_distinct_codes": [
+   7.0,
+   2.9652
+  ],
+  "Psychiatry|tot_benes": [
+   43.0,
+   40.0302
+  ],
+  "Psychiatry|sameday_repeat_ratio": [
+   1.0,
+   0.10002016445952762
+  ],
+  "Psychiatry|em_high_share": [
+   1.0,
+   0.25104094090549106
+  ],
+  "Psychiatry|top_code_pymt_share": [
+   0.6749966756875241,
+   0.29637867329945056
+  ],
+  "Psychiatry|facility_share": [
+   0.0,
+   0.44999713121767576
+  ],
+  "Psychiatry|n_service_rows": [
+   3.0,
+   1.4826
+  ],
+  "Psychologist, Clinical|srvcs_per_bene": [
+   9.923076923076923,
+   6.626896153846152
+  ],
+  "Psychologist, Clinical|pymt_per_bene": [
+   821.1490909090909,
+   692.1791678413927
+  ],
+  "Psychologist, Clinical|chrg_to_alowd": [
+   1.7459527686923555,
+   0.7924752247038124
+  ],
+  "Psychologist, Clinical|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Psychologist, Clinical|risk_score": [
+   1.2664,
+   0.40964238
+  ],
+  "Psychologist, Clinical|pymt_per_bene_per_risk": [
+   651.012227348054,
+   708.4832657784118
+  ],
+  "Psychologist, Clinical|pct_under65": [
+   0.0,
+   0.11640958597597187
+  ],
+  "Psychologist, Clinical|pct_dual": [
+   0.0,
+   0.21779270312203072
+  ],
+  "Psychologist, Clinical|avg_age": [
+   70.0,
+   5.9304
+  ],
+  "Psychologist, Clinical|n_distinct_codes": [
+   4.0,
+   2.9652
+  ],
+  "Psychologist, Clinical|tot_benes": [
+   23.0,
+   14.825999999999999
+  ],
+  "Psychologist, Clinical|sameday_repeat_ratio": [
+   1.0,
+   0.5197007241385547
+  ],
+  "Psychologist, Clinical|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Psychologist, Clinical|top_code_pymt_share": [
+   0.9026986757914138,
+   0.14425894327164984
+  ],
+  "Psychologist, Clinical|facility_share": [
+   0.0,
+   0.31272780992833327
+  ],
+  "Psychologist, Clinical|n_service_rows": [
+   2.0,
+   1.4826
+  ],
+  "Pulmonary Disease|srvcs_per_bene": [
+   2.726244343891403,
+   0.8484630313259262
+  ],
+  "Pulmonary Disease|pymt_per_bene": [
+   212.39934704830054,
+   82.49818534273506
+  ],
+  "Pulmonary Disease|chrg_to_alowd": [
+   2.8322414232168986,
+   0.986787574789532
+  ],
+  "Pulmonary Disease|drug_pymt_share": [
+   0.0,
+   0.09395183797080861
+  ],
+  "Pulmonary Disease|risk_score": [
+   2.09645,
+   0.5213562899999998
+  ],
+  "Pulmonary Disease|pymt_per_bene_per_risk": [
+   95.77336572916656,
+   35.5115752592648
+  ],
+  "Pulmonary Disease|pct_under65": [
+   0.08281230647847009,
+   0.05374757931509848
+  ],
+  "Pulmonary Disease|pct_dual": [
+   0.17705223880597015,
+   0.11934076966610072
+  ],
+  "Pulmonary Disease|avg_age": [
+   74.0,
+   1.4826
+  ],
+  "Pulmonary Disease|n_distinct_codes": [
+   27.5,
+   14.0847
+  ],
+  "Pulmonary Disease|tot_benes": [
+   245.5,
+   191.99669999999998
+  ],
+  "Pulmonary Disease|sameday_repeat_ratio": [
+   1.0,
+   0.03303174228164094
+  ],
+  "Pulmonary Disease|em_high_share": [
+   0.9113263785394933,
+   0.13146751117734726
+  ],
+  "Pulmonary Disease|top_code_pymt_share": [
+   0.3905297760661132,
+   0.15197175901622917
+  ],
+  "Pulmonary Disease|facility_share": [
+   0.7782183539876442,
+   0.32881346837791875
+  ],
+  "Pulmonary Disease|n_service_rows": [
+   11.0,
+   7.412999999999999
+  ],
+  "Radiation Oncology|srvcs_per_bene": [
+   9.248447204968944,
+   5.666393352540599
+  ],
+  "Radiation Oncology|pymt_per_bene": [
+   698.2752616384632,
+   411.39553655760534
+  ],
+  "Radiation Oncology|chrg_to_alowd": [
+   4.065676514514449,
+   1.5836578779552635
+  ],
+  "Radiation Oncology|drug_pymt_share": [
+   0.0,
+   0.00870506673540143
+  ],
+  "Radiation Oncology|risk_score": [
+   1.7760500000000001,
+   0.2965199999999999
+  ],
+  "Radiation Oncology|pymt_per_bene_per_risk": [
+   373.472547920373,
+   250.4249466988069
+  ],
+  "Radiation Oncology|pct_under65": [
+   0.0,
+   0.029544511634585043
+  ],
+  "Radiation Oncology|pct_dual": [
+   0.09031986392985122,
+   0.08509624188830049
+  ],
+  "Radiation Oncology|avg_age": [
+   74.0,
+   1.4826
+  ],
+  "Radiation Oncology|n_distinct_codes": [
+   30.5,
+   8.1543
+  ],
+  "Radiation Oncology|tot_benes": [
+   166.0,
+   103.0407
+  ],
+  "Radiation Oncology|sameday_repeat_ratio": [
+   1.1279472825502896,
+   0.08096932586561054
+  ],
+  "Radiation Oncology|em_high_share": [
+   0.5737704918032787,
+   0.4772217818959374
+  ],
+  "Radiation Oncology|top_code_pymt_share": [
+   0.2518384625834522,
+   0.09586125999858823
+  ],
+  "Radiation Oncology|facility_share": [
+   0.9129456689818999,
+   0.12906675116743524
+  ],
+  "Radiation Oncology|n_service_rows": [
+   17.0,
+   5.9304
+  ],
+  "Registered Dietitian or Nutrition Professional|srvcs_per_bene": [
+   4.25,
+   1.718468181818182
+  ],
+  "Registered Dietitian or Nutrition Professional|pymt_per_bene": [
+   125.43794254658386,
+   42.76666402272728
+  ],
+  "Registered Dietitian or Nutrition Professional|chrg_to_alowd": [
+   2.436459919619203,
+   1.1227480214378338
+  ],
+  "Registered Dietitian or Nutrition Professional|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Registered Dietitian or Nutrition Professional|risk_score": [
+   1.405,
+   0.43588440000000006
+  ],
+  "Registered Dietitian or Nutrition Professional|pymt_per_bene_per_risk": [
+   86.20807436147162,
+   50.65845511722442
+  ],
+  "Registered Dietitian or Nutrition Professional|pct_under65": [
+   0.0,
+   1.0
+  ],
+  "Registered Dietitian or Nutrition Professional|pct_dual": [
+   0.0,
+   0.21581146423350006
+  ],
+  "Registered Dietitian or Nutrition Professional|avg_age": [
+   72.0,
+   2.9652
+  ],
+  "Registered Dietitian or Nutrition Professional|n_distinct_codes": [
+   2.0,
+   1.4826
+  ],
+  "Registered Dietitian or Nutrition Professional|tot_benes": [
+   21.5,
+   15.5673
+  ],
+  "Registered Dietitian or Nutrition Professional|sameday_repeat_ratio": [
+   3.0,
+   1.0782545454545451
+  ],
+  "Registered Dietitian or Nutrition Professional|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Registered Dietitian or Nutrition Professional|top_code_pymt_share": [
+   1.0,
+   0.18633420245855606
+  ],
+  "Registered Dietitian or Nutrition Professional|facility_share": [
+   0.0,
+   0.17960530202677497
+  ],
+  "Registered Dietitian or Nutrition Professional|n_service_rows": [
+   1.0,
+   0.5698518954918891
+  ],
+  "Rheumatology|srvcs_per_bene": [
+   16.94240837696335,
+   22.240582816110443
+  ],
+  "Rheumatology|pymt_per_bene": [
+   362.4357692307692,
+   349.6747882937532
+  ],
+  "Rheumatology|chrg_to_alowd": [
+   2.499489842842958,
+   0.7933191891849016
+  ],
+  "Rheumatology|drug_pymt_share": [
+   0.04155853114805622,
+   0.06161467828010815
+  ],
+  "Rheumatology|risk_score": [
+   1.414,
+   0.2031162
+  ],
+  "Rheumatology|pymt_per_bene_per_risk": [
+   224.38237101147303,
+   212.8708032834017
+  ],
+  "Rheumatology|pct_under65": [
+   0.0659025787965616,
+   0.08453934830412475
+  ],
+  "Rheumatology|pct_dual": [
+   0.0787037037037037,
+   0.10989063307493539
+  ],
+  "Rheumatology|avg_age": [
+   73.0,
+   1.4826
+  ],
+  "Rheumatology|n_distinct_codes": [
+   22.0,
+   16.3086
+  ],
+  "Rheumatology|tot_benes": [
+   272.0,
+   219.42479999999998
+  ],
+  "Rheumatology|sameday_repeat_ratio": [
+   1.0025284450063212,
+   0.003748672566371828
+  ],
+  "Rheumatology|em_high_share": [
+   0.9255813953488372,
+   0.11033302325581394
+  ],
+  "Rheumatology|top_code_pymt_share": [
+   0.4447434727714171,
+   0.168182242523509
+  ],
+  "Rheumatology|facility_share": [
+   0.0,
+   0.3390843550565105
+  ],
+  "Rheumatology|n_service_rows": [
+   9.0,
+   7.412999999999999
+  ],
+  "Speech Language Pathologist|srvcs_per_bene": [
+   15.818181818181818,
+   13.747745454545456
+  ],
+  "Speech Language Pathologist|pymt_per_bene": [
+   878.5858974358974,
+   740.6657021266968
+  ],
+  "Speech Language Pathologist|chrg_to_alowd": [
+   1.701534049202313,
+   0.4934617663836795
+  ],
+  "Speech Language Pathologist|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Speech Language Pathologist|risk_score": [
+   1.6199,
+   0.48421716
+  ],
+  "Speech Language Pathologist|pymt_per_bene_per_risk": [
+   489.82672079350476,
+   439.47088663231176
+  ],
+  "Speech Language Pathologist|pct_under65": [
+   0.0,
+   0.08668400520173396
+  ],
+  "Speech Language Pathologist|pct_dual": [
+   0.0,
+   0.3313706012112541
+  ],
+  "Speech Language Pathologist|avg_age": [
+   77.0,
+   10.3782
+  ],
+  "Speech Language Pathologist|n_distinct_codes": [
+   6.0,
+   2.9652
+  ],
+  "Speech Language Pathologist|tot_benes": [
+   22.0,
+   11.8608
+  ],
+  "Speech Language Pathologist|sameday_repeat_ratio": [
+   1.0,
+   0.2653819955578239
+  ],
+  "Speech Language Pathologist|em_high_share": [
+   NaN,
+   1.0
+  ],
+  "Speech Language Pathologist|top_code_pymt_share": [
+   0.696013028418635,
+   0.3270715595566655
+  ],
+  "Speech Language Pathologist|facility_share": [
+   0.0,
+   1.0
+  ],
+  "Speech Language Pathologist|n_service_rows": [
+   2.0,
+   1.4826
+  ],
+  "Thoracic Surgery|srvcs_per_bene": [
+   2.1998494800218937,
+   0.6589333333333333
+  ],
+  "Thoracic Surgery|pymt_per_bene": [
+   722.5784334375514,
+   431.7388419900914
+  ],
+  "Thoracic Surgery|chrg_to_alowd": [
+   3.9319709505050855,
+   1.0862922352518722
+  ],
+  "Thoracic Surgery|drug_pymt_share": [
+   0.0,
+   1.0
+  ],
+  "Thoracic Surgery|risk_score": [
+   1.7266499999999998,
+   0.56331387
+  ],
+  "Thoracic Surgery|pymt_per_bene_per_risk": [
+   400.663136169082,
+   284.33772648734407
+  ],
+  "Thoracic Surgery|pct_under65": [
+   0.0,
+   0.04570965471743143
+  ],
+  "Thoracic Surgery|pct_dual": [
+   0.021653543307086614,
+   0.03210354330708661
+  ],
+  "Thoracic Surgery|avg_age": [
+   74.5,
+   2.2239
+  ],
+  "Thoracic Surgery|n_distinct_codes": [
+   38.5,
+   20.7564
+  ],
+  "Thoracic Surgery|tot_benes": [
+   104.5,
+   98.5929
+  ],
+  "Thoracic Surgery|sameday_repeat_ratio": [
+   1.0,
+   0.0007298354135816339
+  ],
+  "Thoracic Surgery|em_high_share": [
+   1.0,
+   0.31904314556389984
+  ],
+  "Thoracic Surgery|top_code_pymt_share": [
+   0.5343890579867913,
+   0.2093527083541842
+  ],
+  "Thoracic Surgery|facility_share": [
+   0.7905270655270655,
+   0.3105645726495726
+  ],
+  "Thoracic Surgery|n_service_rows": [
+   5.5,
+   5.1891
+  ],
+  "Urology|srvcs_per_bene": [
+   5.562366910820811,
+   4.9338739417277955
+  ],
+  "Urology|pymt_per_bene": [
+   296.0126000877535,
+   137.22174534966206
+  ],
+  "Urology|chrg_to_alowd": [
+   3.1285614640144885,
+   1.2560429506966524
+  ],
+  "Urology|drug_pymt_share": [
+   0.00781889257345401,
+   0.011592290129402914
+  ],
+  "Urology|risk_score": [
+   1.34355,
+   0.2445548699999999
+  ],
+  "Urology|pymt_per_bene_per_risk": [
+   214.8890056409698,
+   94.58810309916716
+  ],
+  "Urology|pct_under65": [
+   0.036703820509497276,
+   0.05441708428738066
+  ],
+  "Urology|pct_dual": [
+   0.06893052394471949,
+   0.0875859388606536
+  ],
+  "Urology|avg_age": [
+   75.0,
+   1.4826
+  ],
+  "Urology|n_distinct_codes": [
+   64.0,
+   31.875899999999998
+  ],
+  "Urology|tot_benes": [
+   407.0,
+   344.7045
+  ],
+  "Urology|sameday_repeat_ratio": [
+   1.0,
+   0.05434919710388799
+  ],
+  "Urology|em_high_share": [
+   0.6403076342869458,
+   0.29332540295836185
+  ],
+  "Urology|top_code_pymt_share": [
+   0.31206216664085373,
+   0.12197959401468036
+  ],
+  "Urology|facility_share": [
+   0.044546015224352205,
+   0.06604392217162458
+  ],
+  "Urology|n_service_rows": [
+   16.0,
+   11.8608
+  ],
+  "Vascular Surgery|srvcs_per_bene": [
+   2.570815450643777,
+   0.8915067174615426
+  ],
+  "Vascular Surgery|pymt_per_bene": [
+   364.3678761061947,
+   215.3445011150442
+  ],
+  "Vascular Surgery|chrg_to_alowd": [
+   3.791301268237791,
+   1.8608486426402118
+  ],
+  "Vascular Surgery|drug_pymt_share": [
+   0.0,
+   0.08783396890907298
+  ],
+  "Vascular Surgery|risk_score": [
+   2.6136,
+   0.8649488400000002
+  ],
+  "Vascular Surgery|pymt_per_bene_per_risk": [
+   121.92676454434053,
+   81.15041016533041
+  ],
+  "Vascular Surgery|pct_under65": [
+   0.0962962962962963,
+   0.07015770685579198
+  ],
+  "Vascular Surgery|pct_dual": [
+   0.1685214626391097,
+   0.11751999099568074
+  ],
+  "Vascular Surgery|avg_age": [
+   75.0,
+   1.4826
+  ],
+  "Vascular Surgery|n_distinct_codes": [
+   64.0,
+   34.099799999999995
+  ],
+  "Vascular Surgery|tot_benes": [
+   239.0,
+   191.25539999999998
+  ],
+  "Vascular Surgery|sameday_repeat_ratio": [
+   1.0,
+   0.05968566424681699
+  ],
+  "Vascular Surgery|em_high_share": [
+   0.4159097441793619,
+   0.33964578768487463
+  ],
+  "Vascular Surgery|top_code_pymt_share": [
+   0.3009570493828099,
+   0.1634186300140871
+  ],
+  "Vascular Surgery|facility_share": [
+   0.3431952662721893,
+   0.4515107135398538
+  ],
+  "Vascular Surgery|n_service_rows": [
+   13.0,
+   10.3782
+  ]
+ }
+}
