@@ -11,4 +11,5 @@ derivation in numpy with long variable names, and checks the result against scik
 | 04_trees_and_boosting | SSE and Gini splits, a recursive tree class, boosting as gradient descent in function space, bagging vs boosting | DecisionTreeRegressor and GradientBoostingRegressor on housing |
 | 05_production_pipeline_sql_python | SQL extract, peer z-scores, weighted ridge logistic from scratch, out-of-fold evaluation, scores written back to SQLite, a scoring function from a saved artifact | CMS-derived providers table |
 
-Kernel: Python (medicare-fraud). Data: `../Homework/homework.sqlite`.
+Kernel: Python (medicare-fraud). Data: `data/ml_derivations.sqlite` (sklearn benchmark datasets plus a
+20,000-provider sample from the Medicare fraud project, with its OIG-derived labels).
